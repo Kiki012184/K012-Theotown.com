@@ -11,98 +11,81 @@
     <script src="bootstrap.js"></script>
     <title>Kiki012 Website</title>
   </head>
-  <body class="bg-dark text-white">
+  <body class="bg-img text-white">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark border border-primary border-3 rounded mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand h1" href="#">Kiki012</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">
+          <img src="IMG/icon.png" width="50rem" class="round mr-0 ml-0" />
+        </a>
+        <button class="btn btn-dark float-end border border-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mt-2 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <div class="row text-center">
-                <div class="col"><a class="btn btn-primary" href="index.html">Beranda</a></div>
-                <div class="col"><a class="btn btn-primary" href="Konten.html">Konten</a></div>
-                <div class="col"><a class="btn btn-primary" href="kontak.html">Kesan</a></div>
-                <div class="col"><a class="btn btn-primary" href="#">ENG</a></div>
-              </div>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="IMG/icon.png" width="50rem" class="round mr-0 ml-0" /><b>Kiki012 Website</b></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>For one who not indonesian,use google translate</p>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Konten.html">Konten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rpnation.html">Yakanesia</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Railfaning</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link disabled" href="#">OC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
+    <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
     <!--Content-->
-    <!--Profil-->
     <div class="container-fluid">
-      <div class="container-md mb-4 mr-3 ml-3 bg-secondary pb-3 rounded-3">
-        <h1>Profil</h1>
-        <p class="card-text">Hai Saya Kiki012 atau Kiki Dari Banyuwangi Jawa Timur,Dengan Usia 15 Tahun,Secara Autodidak saya adalah sebuah programer dan kreator plugin theotown sederhana,Tertarik dengan politik dan programing.</p>
-      </div>
-
-      <div class="container mb-4 mr-3 ml-3 bg-secondary pb-3 rounded-3">
-        <h1 class="text-center">Biodata</h1>
-        <table class="w-100 table text-white" id="Biodata">
-          <tbody>
-            <tr>
-              <td>Nama</td>
-              <td>: Enggar rizki maulana</td>
-            </tr>
-            <tr>
-              <td>Alias:</td>
-              <td>Kiki,Enggar,Rizki,Dan Maulana</td>
-            </tr>
-            <tr>
-              <td>Kelamin:</td>
-              <td>Laki-Laki (♂)</td>
-            </tr>
-            <tr>
-              <td>Usia:</td>
-              <td>15 Tahun</td>
-            </tr>
-            <tr>
-              <td>Tanggal Lahir:</td>
-              <td>27 November 2006</td>
-            </tr>
-            <tr>
-              <td>Negara:</td>
-              <td>Indonesia</td>
-            </tr>
-            <tr>
-              <td>Agama:</td>
-              <td>Islam</td>
-            </tr>
-            <tr>
-              <td>Ideologi:</td>
-              <td>
-                Pancasila, dan Cetralisme
-                <p translate="false">(Centrism)</p>
-              </td>
-            </tr>
-            <tr>
-              <td>Zona Waktu:</td>
-              <td>WIB +7 GMT</td>
-            </tr>
-            <tr>
-              <td>Hobi:</td>
-              <td>Programing,Dan Membuat plugin</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="container mb-4 mr-3 ml-3 bg-secondary pb-3 rounded-3">
-        <h1>Deskripsi</h1>
-        <p class="">Saya Berasal Dari Banyuwangi jawa timur,lokasi tepat saya di privasi untuk keamanan</p>
-        <p>Saya hidup dengan keluarga sederhana,sejak desember 2019 saya memilih untuk membuat plugin theotown dan perlahan saya mulai "terkenal" dengan plugin bertemakan indonesia,semejak juni 2021 saya mulai tertarik dengan politik.</p>
-        <p>Saya Bercita Cita untuk menjadi politikus dengan partai sendiri,ideologi sendiri,atau setidaknya programer.</p>
+      <div class="res-grid-2">
+        <div class="card bg-opacity-75 mb-3">
+          <img src="IMG/icon.png" class="w-100 round bg-dark" alt="Icon" />
+          <div class="card-body">
+            <h5 class="card-title">Pengenalan</h5>
+            <p class="card-text">Hai Saya Kiki012 atau Kiki Dari Banyuwangi Jawa Timur,Dengan Usia 15 Tahun,Secara Autodidak saya adalah sebuah programer dan kreator plugin theotown sederhana,Tertarik dengan politik dan programing.</p>
+          </div>
+          <ul class="list-unstyled text-white">
+            <lh class=""><h3>Biodata</h3></lh>
+            <li class="">Nama: Enggar rizki maulana</li>
+            <li class="">Kelamin: Laki-Laki (♂)</li>
+            <li class="">Usia: 15 Tahun</li>
+            <li class="">Tanggal Lahir: 27 November 2006</li>
+            <li class="">Negara: Indonesia</li>
+            <li class="">Agama: Islam</li>
+          </ul>
+        </div>
+        <div class="container mb-4 mr-3 ml-3 bg-opacity-75 pb-3 rounded-3">
+          <h1>Deskripsi</h1>
+          <p class="">Saya Berasal Dari Banyuwangi jawa timur,lokasi tepat saya di privasi untuk keamanan</p>
+          <p>Saya hidup dengan keluarga sederhana,sejak desember 2019 saya memilih untuk membuat plugin theotown dan perlahan saya mulai "terkenal" dengan plugin bertemakan indonesia,semejak juni 2021 saya mulai tertarik dengan politik.</p>
+          <p>Saya Bercita Cita untuk menjadi politikus dengan partai sendiri,ideologi sendiri,atau setidaknya programer.</p>
+        </div>
       </div>
     </div>
 
     <!--Footer-->
-    <footer class="mt-3 bg-success text-white container-fluid text-center pb-1">
-      <p>© Kiki012 ft.Bootstrap 2021</p>
+    <footer class="mt-3 bg-dark text-white container-fluid text-center pb-1 pt-2 border-top border-3 border-secondary">
+      <p>© Kiki012 2017-2022 ft.Bootstrap</p>
       <a href="#top" class="btn btn-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
           <path
@@ -110,8 +93,12 @@
             d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"
           />
         </svg>
-        Back to top
+        Kembali Ke atas
       </a>
+      <!--<marquee direction="right" class="w-100">
+          <img src="IMG/TRAINSCROOL.png">
+      </marquee>
+      <img src="IMG/TRAINSCROOLRAIL.png" class="w-100">-->
     </footer>
   </body>
 </html>
