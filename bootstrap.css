@@ -85,7 +85,7 @@ body {
 }
 .bg-img {
   background-color: #333333;
-  background-image: url("IMG/BG_IMG.png");
+  background-image: url("IMG/BG_img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
