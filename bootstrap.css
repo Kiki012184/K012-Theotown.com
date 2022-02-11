@@ -84,8 +84,8 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .bg-img {
-  background-color: #333333;
-  background-image: url("IMG/BG_img.png");
+  background-color: skyblue;
+  background-image: url("IMG/BG_img1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,30 +95,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.bg-discord{
-    background-color: #5865F2;
-}
-.bg-Gmail{
-    background-color: #BB001B;
-}
-.bg-youtube{
-    background-color: #FF0000;
-}
-.bg-IG{
-    background-color: #833AB4;
-}
-.bg-WA{
-    background-color: #25D366;
-}
-.bg-fb{
-    background-color: #4267B2;
-}
-.bg-twt{
-    background-color: #00acee;
-}
-.bg-boot{
-    background-color: #6f42c1;
 }
 .bg-rpntbn{
   background-image: url('https://politicsandwar.com/img/cover/river%20hills.jpg');
