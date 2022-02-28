@@ -96,6 +96,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+.bg-pattern1 {
+    background-image: linear-gradient(180deg,#00008B,#000061,#000053,#000046,#000038);
+}
 .bg-rpntbn{
   background-image: url('https://politicsandwar.com/img/cover/river%20hills.jpg');
   background-repeat: no-repeat;
@@ -197,8 +200,9 @@ h1,
 .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.2;
+  
 }
 
 h1,
@@ -688,7 +692,7 @@ progress {
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
@@ -2086,7 +2090,7 @@ progress {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
@@ -7965,6 +7969,7 @@ fieldset:disabled .btn {
 
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
+  color: auto;
 }
 
 .fs-1 {
@@ -8238,19 +8243,19 @@ fieldset:disabled .btn {
 }
 
 .bg-opacity-10 {
-  background-color: rgba(0, 0, 0, 0.1);
+  --bs-bg-opacity: 0.1;
 }
 
 .bg-opacity-25 {
-  background-color: rgba(0, 0, 0, 0.25);
+  --bs-bg-opacity: 0.25;
 }
 
 .bg-opacity-50 {
-  background-color: rgba(0, 0, 0, 0.5);
+  --bs-bg-opacity: 0.5;
 }
 
 .bg-opacity-75 {
-  background-color: rgba(0, 0, 0, 0.75);
+  --bs-bg-opacity: 0.75;
 }
 
 .bg-opacity-100 {
