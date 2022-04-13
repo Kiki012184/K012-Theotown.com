@@ -1,0 +1,110 @@
+/*
+    Some customisation for my website
+*/
+
+:root {
+    --kk-white: rgb(250,250,250);
+    --kk-white-border: rgb(212,212,212);
+    --kk-black-overlay: rgba(0,0,0,.25);
+}
+
+
+.bg-rpntbn {
+    background-image: url('https://politicsandwar.com/img/cover/river%20hills.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer-main {
+    background-color: var(--kk-white);
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.2rem;
+}
+.footer-main a {
+    background-color: var(--bs-primary);
+    color: #333333;
+    text-decoration: none;
+    padding: 0.25rem !important;
+    border-radius: 3px;
+}
+
+
+.THTOPL-Main {
+    background-color: var(--kk-white);
+    padding: 0.2rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid var(--kk-white-border);
+}
+.THTOPL-Main h3 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid gray;
+}
+.THTOPL-Main img {
+    margin-bottom: 1rem;
+}
+.THTOPL-Main a {
+    background-color: var(--kk-black-overlay);
+    border: none;
+}
+
+
+.container-style-1 {
+    background-color: var(--kk-white);
+    border-bottom: 2px solid var(--kk-white-border);
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+
+.rpn-header {
+    background-image: url('https://politicsandwar.com/img/cover/river%20hills.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-top: 1rem !important;
+    align-items: start;
+    color: white;
+}
+.rpn-header-body {
+    background-color: var(--kk-black-overlay);
+    max-width: 36%;
+}
+.rpn-header-body h1 {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 0.25rem;
+}
+.rpn-header-body q {
+    width: 30%;
+    padding: 0.5rem;
+    font-size: 10px;
+}
+.rpn-header-body div img {
+    max-width: 30%;
+}
+
+.cnt-container {
+    align-items: center;
+    text-align: center;
+}
+
+.cnt-container a {
+    font-family: Monospace;
+    background-color: var(--kk-black-overlay);
+    width: 100%;
+    border-bottom: solid var(--kk-white-border);
+    border-radius: none;
+    margin-bottom: 0.5rem !important;
+}
+.inxrtext{
+    max-width: 69%;
+    text-align: center;
+}
+.inxrtext q{
+    
+}
