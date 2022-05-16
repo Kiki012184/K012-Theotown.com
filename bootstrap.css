@@ -1,10 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-@font-face { font-family: Mojangles; src: url("File/Mojangles.ttf") format("truetype"); }
-@font-face { font-family: RobotoCondensed; src: url("File/RobotoCondensed.ttf") format("truetype"); }
-@font-face { font-family: Fredoka; src: url("File/Fredoka.ttf") format("truetype"); }
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@font-face { font-family: Fredoka; src: url("File/AmaticSC-Bold.ttf") format("truetype"); }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -46,8 +43,8 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 249, 251, 255;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif:/*"Roboto Condensed","RobotoCondensed",*/"Fredoka", sans-serif;
-  --bs-font-monospace: "Roboto Mono", monospace;
+  --bs-font-sans-serif:/*"Roboto Condensed","RobotoCondensed",*/"Amatic SC", sans-serif;
+  --bs-font-monospace: monospace;
   --bs-gradient: linear-gradient(180deg, rgba(200, 200, 200, 0.15), rgba(10, 10, 10, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;

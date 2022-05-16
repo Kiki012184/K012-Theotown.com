@@ -1,11 +1,12 @@
 <!<!DOCTYPE HTML>
     <html>
     <head>
-        <style>
+        <!---<style>
             .main {
                 background-color: #333333;
                 color: #ffffff;
                 font-family: Arial;
+                font-size: 10px;
             }
             .w-100 {
                 width: 100%;
@@ -15,6 +16,7 @@
             }
             table {
                 max-width: 100%;
+                background-color: ;
             }
             th {
                 background-color: #11aadd;
@@ -24,6 +26,7 @@
             tr,td {
                 border: 1px solid rgba(200,200,200,.3);
                 border-radius: 3px;
+                font-size: 10px;
             }
             /*.prg-25 {
                 background-color: rgb(190,80,80);
@@ -45,37 +48,44 @@
                 max-width: 5rem;
                 border-radius: 3px;
             }
-        </style>
+        </style>-->
+    <link rel="stylesheet" href="Bootstrap.css" type="text/css" /> 
+    <style>
+        body {
+            font-family: Sans-Serif !important;
+        }
+        th {
+            text-align: center;
+        }
+    </style>
     </head>
-    <body class="Main">
+    <body>
+        <main>
         <h1>Profil</h1>
-        <table class="w-100">
+        <table class="w-100 table table-bordered bg-info text-white">
             <tr>
-                <th colspan="10">Biodata</th>
+                <th colspan="10" class="text-center bg-primary">Biodata</th>
             </tr>
             <tr>
                 <td>Nama:</td>
                 <td>Enggar Rizki Maulana</td>
-            </tr>
-            <tr>
                 <td>Alias:</td>
                 <td>Kiki,Enggar,<br>Rizki,dan Maulana</td>
             </tr>
             <tr>
                 <td>Jenis Kelamin:</td>
                 <td>Laki-Laki (♂)</td>
-            </tr>
-            <tr>
                 <td>Pronouns:</td>
                 <td>He/Him/His</td>
             </tr>
             <tr>
                 <td>Pekerjaan:</td>
                 <td>Pelajar</td>
-            </tr>
-            <tr>
                 <td>IQ:</td>
                 <td>110-118</td>
+            </tr>
+            <tr>
+
             </tr>
             <tr>
                 <td>Usia:</td>
@@ -128,11 +138,11 @@
             </tr>
             <tr>
                 <td>Tinggi:</td>
-                <td>± 160 CM (5ft 3 inch)</td>
+                <td>161 CM (5ft 3 inch)</td>
             </tr>
             <tr>
                 <td>Berat:</td>
-                <td>32-38 KG (79.3 lb)</td>
+                <td>40 KG (88 lb)</td>
             </tr>
             <tr>
                 <td>Warna Rambut:</td>
@@ -202,5 +212,6 @@
                 <th colspan="2">Minat</th>
             </tr>
         </table>
+        </main>
     </body>
 </html>

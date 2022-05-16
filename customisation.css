@@ -24,18 +24,18 @@
     padding-bottom: 1.2rem;
 }
 .footer-main a {
-    background-color: var(--bs-primary);
-    color: #333333;
+    color: var(--bs-body-color);
     text-decoration: none;
     padding: 0.25rem !important;
     border-radius: 3px;
+    border: solid var(--bs-gray);
 }
 
 
 .THTOPL-Main {
     background-color: var(--kk-white);
     padding: 0.2rem;
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
     border-bottom: 2px solid var(--kk-white-border);
 }
 .THTOPL-Main h3 {
