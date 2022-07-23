@@ -24,11 +24,11 @@
     <script src="bootstrap.js"></script>
     <title>Kiki012 Website</title>
   </head>
-  <body class="bg-main">
-    <main class="container-fluid pt-3">
+  <body class="bg-body">
+    <main class="container pt-3 bg-main">
       <nav class="container contst1 rounded">
-        <center>
-          <img src="IMG/ICON.png" class="w-25 icon mt-3" alt="Kiki012 Icon" />
+        <center class="header-cs1">
+          <img src="IMG/ICON.png" alt="Kiki012 Icon" />
           <h3>Kiki012</h3>
           <p>Welcome to my website!</p>
         </center>
@@ -50,9 +50,9 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           <!--Home-->
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" title="Kiki012 abouts">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h6 class="border w-100 text-center p-2 mt-2"><b>Introduction</b></h6>
-            <p class="p">
+            <p title="About Kiki012">
               Hi I am kiki012 from East Java-Indonesia, and I will introduce myself to you.<br />
               <br />
               I'm an autodidact programmer and like to play video games,and I'm 15 years old, you can call me kiki If you want, so I made a lot of plugins in the TheoTown game, mostly transportation-themed,this site is for other creators
@@ -67,8 +67,8 @@
             </p>
           </div>
           <!--Profile-->
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" title="Kiki012 Profile">
-            <table class="table table-borderless w-100 mt-2">
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <table class="table table-borderless w-100 mt-2" title="Kiki012 profile">
               <tr>
                 <th colspan="5" class="text-center border rounded"><b>Biography information.</b></th>
               </tr>
@@ -94,7 +94,7 @@
               </tr>
               <tr>
                 <td>Gender:</td>
-                <td>Male (♂)</td>
+                <td>Male (<i class="bi bi-gender-male"></i>)</td>
               </tr>
               <tr>
                 <td>Age:</td>
@@ -106,7 +106,7 @@
               </tr>
               <tr>
                 <td>Zodiac:</td>
-                <td>Sagitarius (♐︎)</td>
+                <td>Sagitarius</td>
               </tr>
               <tr>
                 <td>Pronouns:</td>
@@ -177,7 +177,7 @@
             </div>
           </div>
           <!--links-->
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" title="Kiki012 social links">
             <h6 class="border text-center p-2 mt-2">Links</h6>
             <!--Social Links-->
             <div class="pt-2 text-center pb-3">
@@ -207,7 +207,7 @@
                 <td><a href="index_en.html" class="btn btn-outline-info w-100">English</a></td>
             </tr>
             <tr>
-                <td colspan="2"><a href="#top" class="btn btn-xl btn-dark w-100">Back to top</a></td>
+                <td colspan="2"><a href="#top" class="btn btn-xl btn-dark w-100"><i class="bi bi-caret-up-fill"></i> Back to top <i class="bi bi-caret-up-fill"></i></a></td>
             </tr>
         </table>
       </footer>
