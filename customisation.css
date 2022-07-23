@@ -102,22 +102,28 @@
     border-radius: none;
     margin-bottom: 0.5rem !important;
 }
-.inxrtext{
+.inxrtext {
     max-width: 69%;
     text-align: center;
 }
-.inxrtext q{
-    
-}
+.inxrtext q {}
 .contbg {
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(0,0,0,.50);
     font-weight: bold;
     border-radius: 0.25rem;
-    color: var(--bs-body-color);
-    padding: 1.5rem;
-    font-size: 1rem;
+    color: var(--bs-light);
+    padding: 22px;
     text-align: center;
 }
+@media (min-width: 256px) {
+    .contbg h1,h2,h3,h4,h5,h6 {
+        font-size: 18px;
+    }
+    .contbg q {
+        font-size: 12px;
+    }
+}
+
 /*.bg-main {
     background-image: url('IMG/bg_Main.png');
     background-repeat: no-repeat;
@@ -133,25 +139,28 @@
     border-radius: 50%;
 }
 .bg-ITP {
-    background-image: url('IMG/BG_ITP.png');
+    background-image: url('IMG/BGTT_ITP.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-weight: bold;
+    padding: 1rem;
 }
 .bg-ERVP {
-    background-image: url('IMG/BG_ERVP.png');
+    background-image: url('IMG/BGTT_ERVP.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-weight: bold;
+    padding: 1rem;
 }
 .bg-NATP {
-    background-image: url('IMG/BG_NATP.png');
+    background-image: url('IMG/BGTT_NATP.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-weight: bold;
+    padding: 1rem;
 }
 .bg-Eng {
     background-image: url('IMG/ICO_EN.svg');
@@ -172,7 +181,7 @@
 .res-grid-3,
 .res-grid-2 {
     display: grid;
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
 }
 .res-grid-6 {
@@ -210,4 +219,22 @@
     .res-grid-6 {
         grid-template-columns: repeat(6, 6fr);
     }
+}
+
+/*Copied from faithfulpack.net*/
+.poster {
+    position: relative;
+    display: inline
+}
+.poster img {
+    border-radius: 0px;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 2px solid var(--bs-body-color);
 }
