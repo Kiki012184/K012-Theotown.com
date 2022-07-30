@@ -32,7 +32,7 @@
     }
 }
 .bg-body {
-    background-image: url('IMG/BGTT_BODY.png');
+    background-image: url('IMG/BGTT_BODYN.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,9 +40,12 @@
 .bg-main {
     background-color: var(--bs-body-bg);
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.bg-main .col{
+    max-height: 32rem;
 }
 .bg-ITP {
     background-image: url('IMG/BGTT_ITP.png');
@@ -68,12 +71,20 @@
     font-weight: bold;
     padding: 1rem;
 }
+.bg-OCPG {
+    background-image: url('IMG/ICON.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
 .res-grid-6,
 .res-grid-4,
 .res-grid-3,
 .res-grid-2 {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
     grid-template-columns: repeat(1, 1fr);
 }
 .res-grid-6 {
@@ -115,12 +126,12 @@
 img {
     max-width: 100% !important;
 }
-.header-cs1 {
-    
-}
+.header-cs1 {}
 .header-cs1 h3 {
     font-size: 1.75rem;
     margin-top: 0.75rem;
+    font-family: Monospace;
+    font-weight: bold;
 }
 .header-cs1 img {
     border-radius: 25%;
@@ -128,16 +139,32 @@ img {
     width: 30%;
     margin-top: 0.5rem;
 }
-.header-cs1 p {
-    font-family: Monospace;
-}
 .icon {
     border-radius: 25%;
     border: 2px solid var(--bs-body-color);
     width: 30%;
     margin-top: 0.5rem;
 }
+@media (min-width: 768px) {
+    .header-cs1 img {
+        border-radius: 25%;
+        border: 2px solid var(--bs-body-color);
+        width: justify;
+        margin-top: 0.5rem;
+    }
+}
 
-.nav .icon h3{
+.nav .icon h3 {
     font-size: 2rem;
+}
+.pluginTT {
+    font-size: 12px;
+}
+.ovrsc {}
+.ovrsc-card {}
+@media (min-width: 540px) {
+    .ovrsc {
+        max-height: 32rem;
+        overflow-y: scroll;
+    }
 }
