@@ -32,6 +32,7 @@
     }
 }
 .bg-body {
+    background-color: rgb(147,145,142) 	;
     background-image: url('IMG/BGTT_BODYN.png');
     background-repeat: no-repeat;
     background-position: center;
