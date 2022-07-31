@@ -1,0 +1,129 @@
+/*
+    Some customisation for my website
+*/
+
+:root {
+    --kk-white: rgb(250, 250, 250);
+    --kk-white-border: rgb(212,212,212);
+    --kk-black-overlay: rgba(0,0,0,.25);
+}
+
+.contst1 {
+    background-color: var(--kk-white);
+    border-bottom: 2px solid var(--kk-white-border);
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.contbg {
+    background-color: rgba(0,0,0,.50);
+    font-weight: bold;
+    border-radius: 0.25rem;
+    color: var(--bs-light);
+    padding: 22px;
+    text-align: center;
+}
+@media (min-width: 256px) {
+    .contbg h1,h2,h3,h4,h5,h6 {
+        font-size: 18px;
+    }
+    .contbg q {
+        font-size: 12px;
+    }
+}
+.bg-body {
+    background-color: rgb(147,145,142) 	;
+    background-image: url('IMG/BGTT_BODY.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg-main {
+    background-color: var(--bs-body-bg);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.bg-main .col{
+    max-height: 32rem;
+}
+.bg-ITP {
+    background-image: url('IMG/BGTT_ITP.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.bg-ERVP {
+    background-image: url('IMG/BGTT_ERVP.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.bg-NATP {
+    background-image: url('IMG/BGTT_NATP.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.bg-OCPG {
+    background-image: url('IMG/ICON.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.res-grid-6,
+.res-grid-4,
+.res-grid-3,
+.res-grid-2 {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+.res-grid-6 {
+    grid-template-columns: repeat(2, 2fr);
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .res-grid-4,
+    .res-grid-3,
+    .res-grid-2 {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .res-grid-4,
+    .res-grid-3 {
+        grid-template-columns: repeat(3, 3fr);
+    }
+    .res-grid-6 {
+        grid-template-columns: repeat(4, 4fr);
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .res-grid-4 {
+        grid-template-columns: repeat(4, 4fr);
+    }
+    .res-grid-6 {
+        grid-template-columns: repeat(6, 6fr);
+    }
+}
+img {
+    max-width: 100% !important;
+}
