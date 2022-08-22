@@ -23,6 +23,14 @@
     padding: 22px;
     text-align: center;
 }
+.kk-card-border{
+    border-bottom: 2px solid var(--bs-primary);
+    margin-bottom: 0.5rem;
+}
+.kk-content{
+    padding: 1rem;
+    font-weight: bold;
+}
 @media (min-width: 256px) {
     .contbg h1,h2,h3,h4,h5,h6 {
         font-size: 18px;
@@ -33,7 +41,8 @@
 }
 .bg-body {
     background-color: rgb(147,145,142) 	;
-    background-image: url('IMG/BGTT_BODY.png');
+    /*background-image: url('IMG/BGTT_BODY.png');*/
+    background-image: linear-gradient(var(--bs-primary),var(--bs-success));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,9 +53,6 @@
     border-radius: 5px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
-.bg-main .col{
-    max-height: 32rem;
 }
 .bg-ITP {
     background-image: url('IMG/BGTT_ITP.png');
@@ -73,12 +79,37 @@
     padding: 1rem;
 }
 .bg-OCPG {
-    background-image: url('IMG/ICON.png');
+    background-image: url('IMG/IMG_OCN.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: var(--bs-success);
+    font-weight: bold;
+    padding: 1rem;
+}
+.bg-ttlain {
+    background-image: url('IMG/BGTT_BODY.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-weight: bold;
     padding: 1rem;
+}
+.bg-natban{
+    background-image: url('IMG/BGNAT_BAN.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.pr-scroll{
+    min-height: 0rem;
+    overflow-y: scroll;
+}
+.pr-border-v01{
+    border: 2px solid var(--bs-primary);
+    background-color: var(--bs-light);
 }
 .res-grid-6,
 .res-grid-4,
@@ -100,6 +131,10 @@
     .res-grid-2 {
         grid-template-columns: repeat(2, 2fr);
     }
+    .pr-scroll{
+        max-height: 36rem;
+        overflow-y: scroll;
+    }
 }
 @media (min-width: 768px) {
     .container {
@@ -111,6 +146,9 @@
     }
     .res-grid-6 {
         grid-template-columns: repeat(4, 4fr);
+    }
+    .pr-scroll{
+        max-height: 39.5rem;
     }
 }
 @media (min-width: 992px) {
