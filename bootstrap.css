@@ -10,13 +10,12 @@
   font-family: Open Sans;
   src: url(fonts/OpenSans-Regular.ttf);
  }
- @import url('');
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
- @font-face {
+ /*@font-face {
   font-family: Open Sans;
   src: url(fonts/RobotoMono-Regular.ttf);
  }
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');*/
 
 :root {
   --bs-blue: #426633;
@@ -124,7 +123,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.2;
   color: var(--bs-heading-color);
 }
