@@ -1,0 +1,14 @@
+
+/*Classes */
+.icon-header {
+    border-radius: 50%;
+    background-color: #426633;
+}
+.container-card {
+    max-width: 32rem;
+}
+
+/*Elements*/
+img {
+    max-width: 100%;
+}
