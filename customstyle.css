@@ -27,6 +27,8 @@
   background-image: linear-gradient( #486F38,#324E27);
   background-position: center;
   background-size: 100% 100%;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
 }
 .links-icon {
   border-radius: 50%;
