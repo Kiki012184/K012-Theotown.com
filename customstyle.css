@@ -30,6 +30,14 @@
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
+.bg-body-lb {
+  background-color: #CBE9F6;
+}
+.bg-card-lb {
+  background-color: #93B9E6;
+  border: auto solid #93B9E6;
+}
+
 .links-icon {
   border-radius: 50%;
 }
