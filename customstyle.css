@@ -1,19 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Audiowide&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto+Slab&display=swap');
 
 /*
-
-
-
-
-
-
     font-family: 'Roboto Condensed', sans-serif;
-
     font-family: 'Roboto Mono', monospace;
-
-
 */
-
 /*Classes */
 .icon-header {
     border-radius: 50%;
@@ -37,7 +27,6 @@
   background-color: #93B9E6;
   border: auto solid #93B9E6;
 }
-
 .links-icon {
   border-radius: 50%;
 }
@@ -45,6 +34,25 @@
   color: #486F38;
   background-color: #486F38;
 }
+.ykgg-img{
+  margin-top: -3rem;
+  border: 0.25rem solid #93B9E6;
+  width: 27.5% !important;
+}
+@media (min-width: 700px) {
+  .ykgg-img {
+    margin-top: -4.5rem;
+  }
+}
+.ykgg-link {
+  color: var(--bs-dark);
+  text-decoration: none;
+}
+.fs-sm-kk {
+  font-size: 12px;
+}
+/* FONTS */
+
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }
@@ -60,4 +68,8 @@
 /*Elements*/
 img {
     max-width: 100%;
+}
+h1 {
+  margin-bottom: 0.1rem !important;
+  
 }
