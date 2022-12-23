@@ -21,11 +21,11 @@
   background-attachment: fixed;
 }
 .bg-body-lb {
-  background-color: #CBE9F6;
+  background-color:  #324E27;
 }
 .bg-card-lb {
-  background-color: #93B9E6;
-  border: auto solid #93B9E6;
+  background-color: #486F38;
+  border: 0.25rem solid #486F38;
 }
 .links-icon {
   border-radius: 50%;
@@ -36,7 +36,7 @@
 }
 .ykgg-img{
   margin-top: -3rem;
-  border: 0.25rem solid #93B9E6;
+  border: 0.25rem solid #486F38;
   width: 27.5% !important;
 }
 @media (min-width: 700px) {
