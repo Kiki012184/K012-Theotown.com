@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Audiowide&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto+Slab&display=swap');
-
 /*
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Roboto Mono', monospace;
@@ -7,25 +6,33 @@
 /*Classes */
 .icon-header {
     border-radius: 50%;
-    background-color: #426633;
+    background-color: #CCE9F7;
+    border: 0.25rem solid #CCE9F7;
     width: 40%;
 }
 .card-cust {
     max-width: 32rem;
 }
 .bg-body {
-  background-image: linear-gradient( #486F38,#324E27);
+  background-image: linear-gradient( #93B9E6,#eeeeee);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
 .bg-body-lb {
-  background-color:  #324E27;
+  background-color:  #93B9E6;
 }
 .bg-card-lb {
-  background-color: #486F38;
-  border: 0.25rem solid #486F38;
+  background-color: #CCE9F7;
+  border: 0px solid #93BAE7;
+}
+.bg-card-inner {
+  background-color: #EBF6FC;
+  border: 2px solid #93BAE7;
+}
+.credit-lb {
+  color: #93B9E6;
 }
 .links-icon {
   border-radius: 50%;
@@ -36,7 +43,6 @@
 }
 .ykgg-img{
   margin-top: -3rem;
-  border: 0.25rem solid #486F38;
   width: 27.5% !important;
 }
 @media (min-width: 700px) {
@@ -50,6 +56,24 @@
 }
 .fs-sm-kk {
   font-size: 12px;
+}
+.list-lb-lead {
+  border: 1.5px solid #93BAE7;
+  border-radius: 0.25rem;
+}
+.list-lb {
+  border-bottom: none;
+  background-color: #00000000;
+  width: 100%;
+}
+.border-lb {
+  border: 2px solid #93BAE7;
+}
+.card-img-overlay {
+  max-height: 10rem;
+}
+.bg-discord {
+  background-color:  	#5865F2;
 }
 /* FONTS */
 
@@ -65,6 +89,21 @@
 .font-Audiowide {
     font-family: 'Audiowide', cursive;
 }
+
+/*Animations*/
+
+/* Define the animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Apply the animation to an element */
+.card-anim  {
+  animation: fadeIn 0.75s ease-in;
+  animation-fill-mode: forwards;
+}
+
 /*Elements*/
 img {
     max-width: 100%;
