@@ -32,90 +32,83 @@
     <meta property="twitter:image" content="https://kiki012184.github.io/Kiki012.TT.id/IMG/WEBBANNER.png" />
 
     <!-- stylesheet script-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="bootstrap-icons.css" type="text/css" />
     <link rel="stylesheet" href="customstyle.css" type="text/css" />
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
   </head>
-  <body class="container-fluid bg-body">
-    <!-- Div ekstra agar jadi center card nya-->
-    <div class="container-sm card-cust">
-      <!-- Card nya -->
-      <div class="card bg-card my-5 p-0 shadow shadow-3 card-anim">
-        <!-- Gambar header card -->
-        <img src="IMG/CARD_HEADER.jpg" class="card-img-top" alt="Kiki012 web banner" />
+  <body class="container-fluid bg-body d-flex">
+    <!-- Card nya -->
+    <div class="card card-cust bg-card my-5 p-0 shadow shadow-3 card-anim my-5 mx-auto" id="m">
+      <heading id="">
+        <img src="IMG/tamari-rbb-ban.gif" class="card-img-top" alt="Kiki012 web banner" />
         <!-- Overlay gambar header -->
         <div class="card-img-overlay">
           <a href="index_en.html" class="text-light float-end"><i class="bi bi-globe"></i></a>
         </div>
-        <div class="ml-2 container w-100">
-          <img src="IMG/CARD_ICON.png" alt="user" class="ykgg-img icon-header" />
-          <!--<div class="float-end rounded px-1 mt-2 bg-card-inner" style="max-width:25%;">
-            <a href="index_en.html" class="link-dark"><i class="bi bi-globe"></i></a>
-            <a href="#" class="link-dark disabled"><i class="bi bi-person-circle"></i></a>
-            <a href="#" class="link-dark disabled"><i class="bi bi-flag-fill"></i></a>
-          </div>-->
-        </div>
-        <div class="card-body card-content-anim">
-          <div class="container bg-card-inner rounded mb-3">
-            <!-- Header icon dan nama gw -->
+      </heading>
+      <!-- Gambar header card -->
+      <div class="card-body bg-card-inner mx-3 rounded py-0 mt-3 px-0">
+        <div class="row align-items-center mx-0">
+          <div class="col-3">
+            <img src="IMG/rimuruslime.png" class="img-fluid my-2 rounded bg-card" />
+          </div>
+          <div class="col-9 d-flex align-items-center">
             <p>
-              <strong class="fs-2">KIKI012</strong> <span class="text-muted">AKA Yakka</span><br />
-              <span class=""><q>No Game No Life!</q></span>
+              <strong class="fs-2">KIKI012</strong> <small class="text-muted">AKA Yakka</small><br />
+              <span class=""><q>No Game No Life!</q></span><br />
+              <small class="text-muted d-none">
+                <span class="badge bg-card-inner shadow">♂️ He/Him</span>
+              </small>
             </p>
           </div>
-          <!-- card dalam card hmm -->
-          <div class="container bg-card-inner rounded py-3">
-            <div>
-              <strong>Tentang Saya</strong>
-              <p>
-                Hai!,saya adalah Kiki, seorang siswa SMA sederhana dari Indonesia. Saat saya tidak di kelas, Anda dapat menemukan saya bermain game atau mememrogram - ini adalah pelarian saya dari kenyataan pahit. <br />
-                <br />
-                Apakah saya menyebutkan bahwa hewan favorit saya adalah rubah dan anime favorit saya sepanjang masa adalah "No game no life"? Ini semua tentang menjalani hidup sepenuhnya dan bersenang-senang.<br />
-                <br />
-                Ingin tahu lebih banyak tentang saya? Lihat konten dan sosial saya!
-              </p>
-              <div>
-                <strong>Konten</strong>
-                <div class="container">
-                  <div class="row border rounded py-2 bg-card-inner">
-                    <div class="col-3">
-                      <img src="IMG/IMG_NATEMB.png" />
-                    </div>
-                    <div class="col-8">
-                      <b>Membuat Konten</b><br />
-                      <a class="badge bg-success text-decoration-none" href="https://www.nationstates.net/nation=yakanesia">Yakanesia <i class="bi bi-arrow-up-right"></i></a>
-                      <a class="badge bg-success text-decoration-none" href="https://forum.theotown.com/search.php?author_id=10216&fid%5B%5D=43&sc=1&sr=topics&sk=t&sf=firstpost">Theotown <i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <a class="btn btn-dark w-100 bg-discord text-light mb-3" href="https://discord.gg/R987VVDjms"><i class="bi bi-discord"></i> <strong>Terima Undangan</strong></a>
-              <div>
-                <!-- Tautan Sosmed -->
-                <strong>Koneksi</strong>
-                <ul class="list-group list-lead justify-content-center fw-bold">
-                  <li class="list-group-item list">
-                    <a class="ykgg-link" href="https://youtube.com/channel/UCEtTGm4VNKK1Ajaz7yyF0gQ"><i class="bi bi-youtube"></i> Kiki012 <i class="bi bi-arrow-up-right float-end"></i></a>
-                  </li>
-                  <li class="list-group-item list">
-                    <a class="ykgg-link" href="https://www.instagram.com/Kiki012.id/"><i class="bi bi-instagram"></i> Kiki Rizki <i class="bi bi-arrow-up-right float-end"></i></a>
-                  </li>
-                  <li class="list-group-item list">
-                    <a class="ykgg-link" href="https://github.com/Kiki012184"><i class="bi bi-github"></i> kiki012184 <i class="bi bi-arrow-up-right float-end"></i></a>
-                  </li>
-                  <li class="list-group-item list">
-                    <a class="ykgg-link disabled" href="https://twitter.com/Kiki012_Glenia?t=FEqSO5tSWzsbSjL2o78OGQ&s=09"><i class="bi bi-twitter"></i> Yakka <i class="bi bi-arrow-up-right float-end"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        </div>
+      </div>
+      <!-- card dalam card hmm -->
+      <div class="card-body bg-card-inner mx-3 rounded py-3 mt-3">
+        <strong>Tentang Saya</strong>
+        <p>
+          Hai!, saya Kiki, laki-laki berusia 16 tahun dari Indonesia, yang menyukai game dan pemrograman. Saya adalah tipe kepribadian INTP-T, yang berarti saya senang memecahkan masalah secara logis. Kutipan saya adalah "Don't be afraid you're making things worse!" - selalu mengingatkan saya untuk tetap tenang meskipun dalam banyak stres.<br><br>Bagaimanapun, itu sedikit tentang saya.  Mungkin mengecek sosial saya?
+        </p>
+        <strong>Konten</strong>
+        <div class="row align-items-center bg-card-inner rounded mx-0 py-1">
+          <div class="col-3">
+            <img src="IMG/IMG_NATEMB.png" class="img-fluid" />
+          </div>
+          <div class="col-9 d-flex align-items-center">
+            <p>
+              <b>Membuat Konten</b><br>
+              <span class="btn-group">
+                <a class="btn btn-sm btn-outline-dark" href="https://www.nationstates.net/nation=yakanesia">Yakanesia</a>
+                <a class="btn btn-sm btn-outline-dark" href="https://forum.theotown.com/search.php?author_id=10216&fid%5B%5D=43&sc=1&sr=topics&sk=t&sf=firstpost">Theotown</a>
+                <a class="btn btn-sm btn-outline-dark disabled" href="#">OC</a>
+              </span>
+            </p>
           </div>
         </div>
-        <!-- Hak cipta -->
-        <p class="fw-bold text-center credit"><i class="bi bi-c-circle"></i> KIKI012 2018-2023</p>
+        <br />
+        <a class="btn btn-dark w-100 bg-discord text-light mb-3" href="https://discord.gg/R987VVDjms"><i class="bi bi-discord"></i> <strong>Terima Undangan</strong></a>
+        <!-- Tautan Sosmed -->
+        <strong>Koneksi</strong>
+        <ul class="list-group list-lead justify-content-center fw-bold">
+          <li class="list-group-item list">
+            <a class="ykgg-link" href="https://youtube.com/channel/UCEtTGm4VNKK1Ajaz7yyF0gQ"><i class="bi bi-youtube"></i> Kiki012 <i class="bi bi-arrow-up-right float-end"></i></a>
+          </li>
+          <li class="list-group-item list">
+            <a class="ykgg-link" href="https://www.instagram.com/Kiki012.id/"><i class="bi bi-instagram"></i> Kiki Rizki <i class="bi bi-arrow-up-right float-end"></i></a>
+          </li>
+          <li class="list-group-item list">
+            <a class="ykgg-link" href="https://github.com/Kiki012184"><i class="bi bi-github"></i> kiki012184 <i class="bi bi-arrow-up-right float-end"></i></a>
+          </li>
+          <li class="list-group-item list">
+            <a class="ykgg-link disabled" href="https://twitter.com/Kiki012_Glenia?t=FEqSO5tSWzsbSjL2o78OGQ&s=09"><i class="bi bi-twitter"></i> Yakka <i class="bi bi-arrow-up-right float-end"></i></a>
+          </li>
+        </ul>
       </div>
+      <!-- Hak cipta -->
+      <p class="fw-bold text-center credit mt-3"><i class="bi bi-c-circle"></i> KIKI012 2018-2023</p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

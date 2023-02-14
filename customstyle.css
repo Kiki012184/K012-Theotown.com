@@ -14,62 +14,45 @@ body {
 }
 
 .card-cust {
-  max-width: 32rem;
+  max-width: 26rem;
 }
 
 .bg-card {
   background-color: #CCE9F7;
   border: 0;
 }
-
 .bg-card-inner {
   background-color: #EBF6FC;
   border: 2px solid var(--kkcs--dark) !important;
+  color: var(--bs--dark);
 }
-
 .credit {
   color: var(--kkcs--dark);
 }
-
 .links-icon {
   border-radius: 50%;
-}
-
-.ykgg-img {
-  margin-top: -3rem;
-  width: 27.5% !important;
-  border-radius: 50%;
-  background-color: #CCE9F7;
-  border: 0.25rem solid #CCE9F7;
-  width: 40%;
-}
-
-@media (min-width: 700px) {
-  .ykgg-img {
-    margin-top: -4.5rem;
-  }
 }
 .ykgg-link {
   color: var(--bs--dark);
   text-decoration: none;
 }
-
 .card-img-overlay {
   max-height: 6rem;
 }
-
 .bg-discord {
   background-color: #5865F2;
 }
-
 .card-img-top {
   max-height: 16rem !important;
+  min-height: 1rem !important;
 }
-
 .card-anim {
   animation: fadeIn 0.75s ease-in forwards;
 }
-
+.main-cnt {
+  max-height: 24rem;
+  overflow-y: scroll;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -78,11 +61,6 @@ body {
     opacity: 1;
   }
 }
-
 img {
   max-width: 100%;
-}
-
-h1 {
-  margin-bottom: 0.1rem !important;
 }
