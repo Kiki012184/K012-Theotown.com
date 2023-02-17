@@ -7,6 +7,7 @@
 }
 body {
   font-family: 'Cabin', sans-serif;
+  color: var(--bs-body-color);
   background-color: var(--kkcs--dark) !important;
   background-image: linear-gradient(var(--kkcs--dark), var(--kkcs--dark));
   background-position: center;
@@ -34,7 +35,7 @@ body {
   border-color: var(--kkcs--dark);
 }
 .ykgg-link a {
-  color: var(--bs--dark);
+  color: var(--bs-body-color);
   text-decoration: none;
   font-weight: normal;
   transition: background-color 0.5s ease-in;
