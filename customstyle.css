@@ -4,10 +4,11 @@
   --kkcs--dark: #486F38;
   --kkcs-card-main: #324E27;
   --kkcs-card-inner: #2B4322;
+  --kkgg-fontcl: #212529;
 }
 body {
   font-family: 'Cabin', sans-serif;
-  color: var(--bs-body-color);
+  color: var(--kkgg-fontcl);
   background-color: var(--kkcs--dark) !important;
   background-image: linear-gradient(var(--kkcs--dark), var(--kkcs--dark));
   background-position: center;
@@ -35,7 +36,7 @@ body {
   border-color: var(--kkcs--dark);
 }
 .ykgg-link a {
-  color: var(--bs-body-color);
+  color: var(--kkgg-fontcl);
   text-decoration: none;
   font-weight: normal;
   transition: background-color 0.5s ease-in;
