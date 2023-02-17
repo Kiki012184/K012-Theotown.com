@@ -1,57 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 :root {
-  --kkcs--dark: #93B9E6;
+  --kkcs--dark: #486F38;
+  --kkcs-card-main: #324E27;
+  --kkcs-card-inner: #2B4322;
 }
-
 body {
   font-family: 'Cabin', sans-serif;
+  background-color: var(--kkcs--dark) !important;
   background-image: linear-gradient(var(--kkcs--dark), var(--kkcs--dark));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .card-cust {
   max-width: 26rem;
 }
-
 .bg-card {
-  background-color: #CCE9F7;
+  background-color: var(--kkcs-card-main);
   border: 0;
 }
 .bg-card-inner {
-  background-color: #EBF6FC;
-  border: 2px solid var(--kkcs--dark) !important;
+  background-color: var(--kkcs-card-inner);
+  border: 1px solid var(--kkcs--dark) !important;
   color: var(--bs--dark);
 }
 .credit {
   color: var(--kkcs--dark);
 }
-.links-icon {
-  border-radius: 50%;
-}
 .ykgg-link {
+  background-color: var(--kkcs-card-main);
+  border-color: var(--kkcs--dark);
+}
+.ykgg-link a {
   color: var(--bs--dark);
   text-decoration: none;
+  font-weight: normal;
+  transition: background-color 0.5s ease-in;
+}
+.ykgg-link a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.kkgg-url {
+  background-color: transparent;
+  border-color: var(--kkcs--dark);
+  transition: background-color 0.5s ease-in;
+}
+.kkgg-url:hover {
+  background-color: var(--kkcs--dark);
+  border-color: var(--kkcs--dark);
 }
 .card-img-overlay {
   max-height: 6rem;
 }
 .bg-discord {
   background-color: #5865F2;
+  border-color: #5865F2;
+  transition: background-color 0.5s ease-in;
+}
+.bg-discord:hover {
+  background-color: var(--kkcs--dark);
+  border-color: var(--kkcs--dark);
 }
 .card-img-top {
   max-height: 16rem !important;
   min-height: 1rem !important;
+  overflow: hidden !important;
+  background-color: var(--kkcs--dark);
 }
 .card-anim {
   animation: fadeIn 0.75s ease-in forwards;
-}
-.main-cnt {
-  max-height: 24rem;
-  overflow-y: scroll;
 }
 @keyframes fadeIn {
   0% {
