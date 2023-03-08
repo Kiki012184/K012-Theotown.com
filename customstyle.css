@@ -19,6 +19,9 @@ body {
 .card-cust {
   max-width: 28rem;
 }
+.div-cust {
+  max-width: 45rem;
+}
 .bg-card {
   background-color: var(--kkcs-card-main);
   border: 0;
@@ -30,6 +33,10 @@ body {
 }
 .credit {
   color: var(--kkcs--dark);
+}
+.ykgg-hr-ln {
+  border: 2px dotted var(--kkcs--dark);
+  background-color: var(--kkcs--dark);
 }
 .ykgg-link {
   background-color: var(--kkcs-card-main);
@@ -74,7 +81,10 @@ body {
 }
 .kk-card-url {
   color: var(--bs-light);
-]
+}
+.ykgg-round {
+  border-radius: 50%;
+}
 .card-img-top {
   max-height: 16rem !important;
   min-height: 1rem !important;
