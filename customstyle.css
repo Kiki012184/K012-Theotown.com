@@ -12,6 +12,10 @@ body {
 .bg-body-yk {
   background-color: var(--YKGG-MAIN) !important;
 }
+.cnt-yk {
+  background-color: transparent;
+  border: 1px solid var(--YKGG-PRIM);
+}
 .card-YK {
   border: 1px solid var(--YKGG-PRIM) !important;
   border-radius: 0px;
@@ -40,6 +44,32 @@ body {
   background-color: var(--YKGG-PRIM);
   color: var(--YKGG-MAIN);
 }
+.btn-cycy {
+  clip-path: polygon(calc(100% - 8px) 0px, 100% 8px, 100% 100%, 8px 100%, 0px calc(100% - 8px), 0px 0px);
+  border: 1px solid var(--YKGG-PRIM);
+  background-color: var(--YKGG-PRIM);
+}
+
+.btn-cycy div {
+  clip-path: polygon(calc(100% - 8px) 0px, 100% 8px, 100% 100%, 8px 100%, 0px calc(100% - 8px), 0px 0px); 
+  background-color: var(--YKGG-MAIN);
+  padding-left: 0.75rem;
+}
+
+.btn-cycy div a {
+  text-decoration: none;
+  color: var(--YKGG-PRIM);
+  width: 100%;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.btn-cycy div:hover a {
+  color: var(--YKGG-MAIN);
+  background-color: var(--YKGG-PRIM);
+}
+.btn-cycy div a:hover {
+  color: var(--YKGG-MAIN);
+  background-color: var(--YKGG-PRIM);
+}
 .btn-cnt-YK {
   border: 1px solid var(--YKGG-PRIM);
   color: var(--YKGG-PRIM);
@@ -61,12 +91,44 @@ body {
   color: var(--YKGG-PRIM);
   border: 1px dashed var(--YKGG-PRIM);
 }
+.coll-YK {
+  background-color: transparent;
+  border: 1px solid var(--YKGG-PRIM);
+  padding-bottom: 0.25rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+.btn-coll-YK {
+  border: 1px solid var(--YKGG-PRIM);
+  color: var(--YKGG-PRIM);
+  border-radius: 0px;
+  margin-bottom: 0.25rem;
+}
+.btn-coll-YK:hover {
+  border: 1px solid var(--YKGG-PRIM);
+  color: var(--YKGG-MAIN);
+  background-color: var(--YKGG-PRIM);
+  margin-bottom: 0.25rem;
+}
+.table-YK {
+  color: var(--YKGG-PRIM);
+}
+.table-YK tr {
+  border: 1px solid var(--YKGG-PRIM);
+}
 .card {
   opacity: 0;
   transform: translateY(-50px);
   animation: fadeInDown 1s ease forwards;
 }
-
+.coll-YK-scroll {
+  max-height: 32rem;
+  overflow-y: scroll;
+}
+.yk-men {
+  font-weight: thin;
+  color: cyan;
+}
 @keyframes fadeInDown {
   0% {
     opacity: 0;
