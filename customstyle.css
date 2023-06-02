@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 :root {
   --YKGG-MAIN: #000015;
   --YKGG-PRIM: #efeeee;
@@ -16,27 +18,112 @@
   }
 }
 body {
-  font-family: 'VT323', sans-serif;
+  font-family: "Cabin", sans-serif;
   color: var(--bs-light);
+}
+.ft-ps2p {
+  font-family: "Press Start 2P", arial;
+}
+.ft-vt {
+  font-family: "VT323", arial;
+}
+.ft-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 .bg-body-yk {
   background-color: var(--YKGG-MAIN) !important;
+  /*background-image: url('IMG/IMG_WEBBG_VER.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;*/
   /*background: 
   linear-gradient(to right,red, orange, yellow,lime,green,cyan,blue,indigo,purple,pink,red)
   ;
   background-size: 200%;
   animation: background-pan 10s linear infinite;*/
 }
-.cnt-yk {
-  background-color: transparent;
-  border: 1px solid var(--YKGG-PRIM);
+.webheader-yk {
+  min-height: 8rem;
+  background: url("IMG/IMG_CARDHD.png") no-repeat center center;
+  background-size: cover;
+  height: 6rem;
+  width: 100%;
+  text-align: center center;
 }
-.card-YK {
-  border: 1px solid var(--YKGG-PRIM) !important;
-  border-radius: 0px;
-  background-color: transparent !important;
-  color: var(--YKGG-PRIM) !important;
-  max-width: 28rem;
+.jumbotron {
+  position: relative;
+  background: url("IMG/IMG_WEBBG.png") no-repeat center center;
+  font-family: "Orbitron", sans-serif;
+  background-size: cover;
+  padding: 0;
+  min-height: 8rem;
+  color: white;
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.jumbotron-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+.bg-dark-yk {
+  background-color: var(--YKGG-MAIN);
+  color: var(--YKGG-PRIM);
+}
+.bg-sec-yk {
+  background-color: #222235;
+  color: var(--YKGG-PRIM);
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Delay the animations for smoother effect */
+.animated-section {
+  animation-delay: 0.5s;
+}
+
+/* Additional styling for demonstration purposes */
+.container-section {
+  padding: 4rem 0;
+  text-align: center;
+  color: #fff;
+}
+.cnt-yk-w60 {
+  max-width: 40rem;
+}
+.bg-op-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-opl-50 {
+  background-color: rgba(200, 200, 200, 0.5);
 }
 .fw-italic {
   font-weight: italic;
@@ -51,23 +138,6 @@ body {
   margin-bottom: 0.75rem;
   margin-top: 0vh;
 }
-.ft-cyan {
-  color: #23C1FF;
-}
-.cnt-cryk {
-  border-top: 1px solid var(--YKGG-PRIM);
-  border-bottom: 1px solid var(--YKGG-PRIM);
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  max-height: 64rem;
-  overflow-y: scroll;
-}
-.cnt-cryk p {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
 .ft-ngnl {
   color: var(--YKGG-PRIM);
   text-align: center;
@@ -80,7 +150,7 @@ body {
 }
 .fadein-yk {
   opacity: 0;
-  animation: fadein 1s forwards;
+  animation: fadein 2.5s forwards;
 }
 .fadein-yk h2 {
   animation-delay: 0.2s;
@@ -96,30 +166,10 @@ body {
     opacity: 1;
   }
 }
-.table {
-  color: var(--YKGG-PRIM) !important;
-}
-/*.thm-txt {
-  background: linear-gradient(to right,#ffffde,#deffff,#ffffde);
-  color: var(--YKGG-MAIN);
-  white-space: nowrap;
-  webkit-background-clip: text;
-  webkit-text-fill-color: transparent;
-  background-size: 200%;
-  animation: background-pan 3s linear infinite;
-}
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  to {
-    background-position: 200% center;
-  }
-}*/
 .btn-YK {
   background-color: transparent;
   color: var(--YKGG-PRIM);
-  border: 1px solid transparent;
+  border: 1px solid var(--YKGG-PRIM);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -130,101 +180,12 @@ body {
 }
 .btn-YK:hover {
   border-color: var(--YKGG-PRIM);
-  color: var(--YKGG-PRIM);
-  background-color: transparent;
+  color: var(--YKGG-MAIN);
+  background-color: var(--YKGG-PRIM);
 }
 .btn-YK:active {
   background-color: var(--YKGG-PRIM);
   color: var(--YKGG-MAIN);
-}
-.btn-cycy {
-  clip-path: polygon(calc(100% - 8px) 0px, 100% 8px, 100% 100%, 8px 100%, 0px calc(100% - 8px), 0px 0px);
-  border: 1px solid var(--YKGG-PRIM);
-  background-color: var(--YKGG-PRIM);
-}
-
-.btn-cycy div {
-  clip-path: polygon(calc(100% - 8px) 0px, 100% 8px, 100% 100%, 8px 100%, 0px calc(100% - 8px), 0px 0px); 
-  background-color: var(--YKGG-MAIN);
-  padding-left: 0.75rem;
-}
-
-.btn-cycy div a {
-  text-decoration: none;
-  color: var(--YKGG-PRIM);
-  width: 100%;
-  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-.btn-cycy div:hover a {
-  color: var(--YKGG-MAIN);
-  background-color: var(--YKGG-PRIM);
-}
-.btn-cycy div a:hover {
-  color: var(--YKGG-MAIN);
-  background-color: var(--YKGG-PRIM);
-}
-.btn-cnt-YK {
-  border: 1px solid var(--YKGG-PRIM);
-  color: var(--YKGG-PRIM);
-  font-weight: normal;
-  background-color: transparent;
-  width: 100% !important;
-  border-radius: 0;
-  width: 100%;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.btn-cnt-YK:hover {
-  border: 1px solid var(--YKGG-PRIM);
-  color: var(--YKGG-MAIN);
-  font-weight: normal;
-  background-color: var(--YKGG-PRIM);
-  border-radius: 0;
-}
-.list-group-YK li {
-  background-color: transparent;
-  color: var(--YKGG-PRIM);
-  border: 1px dashed var(--YKGG-PRIM);
-}
-.btn-coll-YK {
-  background-color: transparent;
-  border: 1px solid var(--YKGG-PRIM);
-  color: var(--YKGG-PRIM);
-  padding-bottom: 0.25rem;
-  padding-top: 0.3rem;
-  margin-bottom: 0.25rem;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.btn-coll-YK:active {
-  border: 1px solid var(--YKGG-PRIM);
-  color: var(--YKGG-MAIN);
-  border-radius: 0px;
-  margin-bottom: 0.25rem;
-}
-.btn-coll-YK:hover {
-  border: 1px solid var(--YKGG-PRIM);
-  color: var(--YKGG-MAIN);
-  background-color: var(--YKGG-PRIM);
-  margin-bottom: 0.25rem;
-  cursor: pointer;
-}
-.table-YK {
-  color: var(--YKGG-PRIM);
-}
-.table-YK tr {
-  border: 1px solid var(--YKGG-PRIM);
-}
-.card {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: fadeInDown 1s ease forwards;
-}
-.coll-YK-scroll {
-  max-height: 32rem;
-  overflow-y: scroll;
-}
-.yk-men {
-  font-weight: thin;
-  color: cyan;
 }
 @keyframes fadeInDown {
   0% {
@@ -235,9 +196,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.card-img-overlay {
-  max-height: 6rem;
 }
 img {
   max-width: 100%;
