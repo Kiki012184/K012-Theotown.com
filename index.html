@@ -43,8 +43,9 @@
     <!-- Header/Nav -->
     <div class="container-fluid px-0 fadein-yk">
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-yk">
+      <nav class="navbar navbar-expand-lg navbar-dark bgnav-yk fixed-top">
         <div class="container">
+          <a class="navbar-brand" href="#">Kiki Website</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,7 +56,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="contentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konten</a>
-                <ul class="dropdown-menu bg-sec-yk" aria-labelledby="contentDropdown">
+                <ul class="dropdown-menu bgnavdrd-yk" aria-labelledby="contentDropdown">
                   <li><a class="dropdown-item text-light" href="#ITP">Indonesia Transport Pack</a></li>
                   <li><a class="dropdown-item text-light" href="#NATP">Nature Plus</a></li>
                   <li><a class="dropdown-item text-light" href="#ERVP">Expanded Road Vehicle Pack</a></li>
@@ -64,10 +65,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#nation">Fictional Country</a>
+                <a class="nav-link" href="#nation">Negara Fiksi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#OC">Original Character</a>
+                <a class="nav-link" href="#OC">Karakter Original (OC)</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index_en.html">Change Language</a>
@@ -77,7 +78,7 @@
         </div>
       </nav>
       <!-- jumbotron -->
-      <div class="jumbotron">
+      <div class="jumbotron mt-5">
         <div class="container jumbotron-content text-center">
           <h1 class="display-4"><a href="index_en.html" class="link-light">Hai, Saya Kiki</a></h1>
           <p class="fs-6 fw-bold">Siswa SMA, Programmer otodidak</p>
@@ -147,69 +148,57 @@
             Saya memiliki beberapa negara fiksi, yang biasa saya gunakan untuk melakukan roleplay pada beberapa forum atau server roleplay politik dan negara. Kebanyakan negara fiksi yang saya miliki adalah negara fiksi dengan ideologi
             sosialisme.
           </p>
-          <div id="carouselExample" class="carousel slide my-3" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=3&c1=6&c2=0&c3=6&o=7&c4=0&s=1&c5=5" class="d-block w-100" alt="Brastokavia" />
-                <div class="carousel-caption d-block bg-op-50">
-                  <h4 class="ft-montserrat">Brastokavia</h4>
-                  <p id="Brastokavia">Bangsa sosialis dengan populasi beragam. Gostokagrad, ibu kota, memimpin jalan menuju kesetaraan, kesetaraan dan kemajuan sosial,juga dikenal sebagai negara yang paling damai.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=10&c1=7&c2=4&c3=6&o=6&c4=5&s=12&c5=7" class="d-block w-100" alt="Slide 2" />
-                <div class="carousel-caption d-block bg-op-50">
-                  <h4 class="ft-montserrat">Nokisovgrad</h4>
-                  <p>Bangsa republik degan sistem demokrasi yang paling adil. Rostova,ibu kota, memimpin jalannya negeri dengan demokrasi yang adil dan rakyatnya yang sejahtera.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=0&c1=2&c2=3&c3=6&o=11&c4=1&s=11&c5=5" class="d-block w-100" alt="Slide 3" />
-                <div class="carousel-caption d-block bg-op-50">
-                  <h4 class="ft-montserrat">Rekovia</h4>
-                  <p>Kerajaan monarki yang biasa dikenal sebagai kerajaan militia. iron sand,ibu kota, menjadi kota yang paling padat di kerajaan ini,juga sebagai pemberhentian kapal pengang yang ramai.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=3&c1=5&c2=3&c3=5&o=5&c4=6&s=21&c5=5" class="d-block w-100" alt="Slide 3" />
-                <div class="carousel-caption d-block bg-op-50">
-                  <h4 class="ft-montserrat">Dinofluge</h4>
-                  <p>Republik yang dikenal degan ibukotanya yang indah. Soln,ibu kota, menjadi pusat industri pariwisata di negara ini,dna juga negara ini dikenal dengan hukum ramah lingkungan yang ketat.</p>
-                </div>
-              </div>
+          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start row" style="animation: slide-right 3s ease forwards;">
+            <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+              <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=3&c1=6&c2=0&c3=6&o=7&c4=0&s=1&c5=5" class="d-block w-100" alt="Brastokavia" />
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-12 col-md-9">
+              <h4 class="ft-montserrat">Brastokavia</h4>
+              <p>
+                Adalah negara damai dan sejahtera yang ramah lingkungan. Dipimpin oleh Konovik Simokaren, Brastokavia menganut sosialisme liberal. Dengan PDB 28 miliar dolar dan populasi 9,8 juta, warganya menikmati standar hidup yang
+                tinggi. Bahasa resminya adalah Brastokan, dan mata uangnya adalah Rubel Brastokavian. Dikenal karena upaya daur ulang terbaiknya dan pembangkit listrik tenaga nuklir yang luas, Brastokavia tetap netral dan tidak pernah
+                terlibat dalam perang apa pun.
+              </p>
+            </div>
           </div>
-          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start" style="animation: slide-right 3s ease forwards;">
-            <h4 class="ft-montserrat">Brastokavia</h4>
-            <p>
-              Brastokavia adalah sebuah bangsa dengan ideologi republik sosialis degan banyak keragaman etnis, negeri ini terletak di semenanjung kosonica,negara ini adalah negara paling damai, meskipun menggunakan ideologi sosialisme, negara ini menjunjung tinggi kesejahteraan, dan kesetaraan dalam ekonomi dan hak sipil.
-            </p>
+          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start row" style="animation: slide-right 3.1s ease forwards;">
+            <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+              <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=10&c1=7&c2=4&c3=6&o=6&c4=5&s=12&c5=7" class="d-block w-100" alt="Brastokavia" />
+            </div>
+            <div class="col-12 col-md-9">
+              <h4 class="ft-montserrat">Nokisovgrad</h4>
+              <p>
+                Adalah republik demokratis yang hidup dipimpin oleh Sobona Kisino. Dengan PDB 12 miliar dolar dan populasi 7,5 juta, Nokisovgrad tumbuh subur sebagai salah satu negara paling demokratis. Bahasa resminya adalah Nokiov, dan
+                mata uangnya adalah Dolar Nokisov. Saat ini menghadapi tantangan dengan politisi korup, Nokisovgrad menawarkan hak-hak sipil yang sangat baik. Dikenal karena budayanya yang berpusat pada mobil, Nokisovgrad menawarkan
+                perpaduan unik antara tradisi dan kemajuan.
+              </p>
+            </div>
           </div>
-          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start" style="animation: slide-right 3.1s ease forwards;">
-            <h4 class="ft-montserrat">Nokisovgrad</h4>
-            <p>
-              Nokisovgrad adalah sebuah bangsa dengan ideologi demokrasi penuh,negera ini adalah negara dengan sistem paling demokratis di dunia fiksi ini, menjunjung tinggi hak masyarakat dan juga hak politik pada masyarakatnya.
-            </p>
+          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start row" style="animation: slide-right 3.2s ease forwards;">
+            <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+              <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=0&c1=2&c2=3&c3=6&o=11&c4=1&s=11&c5=5" class="d-block w-100" alt="Brastokavia" />
+            </div>
+            <div class="col-12 col-md-9">
+              <h4 class="ft-montserrat">Rekovia</h4>
+              <p>
+                Adalah kerajaan monarki absolut yang diperintah oleh Raja Karl Mexer. Dengan PDB sebesar $23 miliar dan populasi 8,8 juta, Rekovia memancarkan kekuatan dan ambisi. Bahasa resminya adalah Rekovian, dan mata uangnya adalah
+                Rokovan Pound. Dikenal karena kecenderungan perangnya, Rekovia memiliki reputasi untuk perilaku agresif dan menjadi katalisator perang. Di bawah pemerintahan Raja Karl Mexer, Rekovia memberlakukan wajib militer, membina
+                pasukan yang kuat dan tangguh.
+              </p>
+            </div>
           </div>
-          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start" style="animation: slide-right 3.2s ease forwards;">
-            <h4 class="ft-montserrat">Rekovia</h4>
-            <p>
-              Rekovia adalah kerajaan yang dikenal dengan wajib militernya,hak sipil dan politik disini sangatlah rendah, dikarenakan raja yang sangat otoriter dengan rakyatnya, menjadikan kerajaan ini memiliki ekonomi yang maju dikarenakan pelabuhan ibukotanya yang ramai.
-            </p>
-          </div>
-          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start" style="animation: slide-right 3.3s ease forwards;">
-            <h4 class="ft-montserrat">Dinofluge</h4>
-            <p>
-              Dinofluge adalah negara degan ideologi republik parlimen,negara ini dikenal degan ibukotanya yang sangat indah dikarenakan kebijakan ramah lingkungan yang ketat,bahkan para turis yang mengunjungi negara ini tidak diperbolehkan untuk membawa hal-hal yang tidak dapat didaur ulang, ataupun mudah terurai.
-            </p>
+          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start row" style="animation: slide-right 3.3s ease forwards;">
+            <div class="col-12 col-md-3 mb-3 mb-md-0 d-flex align-items-center">
+              <img src="https://flag-designer.appspot.com/gwtflags/SvgFileService?d=3&c1=5&c2=3&c3=5&o=5&c4=6&s=21&c5=5" class="d-block w-100" alt="Brastokavia" />
+            </div>
+            <div class="col-12 col-md-9">
+              <h4 class="ft-montserrat">Dinofluge</h4>
+              <p>
+                Adalah sebuah negara demokrasi sosialis yang dipimpin oleh Pemimpin Besar terhormat Desfugen Eindofbarn. Dengan PDB yang kuat sebesar $19 miliar dan populasi sebesar 13,3 juta, Dinofluge berkembang dengan komitmennya
+                terhadap kesejahteraan publik. Bahasa resminya adalah Flugen, dan mata uangnya adalah Flugen Barls. Dikenal karena infrastruktur publiknya yang luar biasa dan pemandangan alamnya yang menakjubkan, Dinofluge mewujudkan
+                keramahan lingkungan dan kelestarian lingkungan. Bangsa ini bangga dengan penekanannya yang kuat pada kesetaraan sipil, memastikan masyarakat yang harmonis dan inklusif bagi semua warganya.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -218,41 +207,28 @@
         <div class="container text-center cnt-yk-w60">
           <h3 class="ft-montserrat">Karakter original (OC)</h3>
           <p>
-            Saya memiliki beberapa karakter original, yang sudah saya jelaskan di sesi perkenalan, yaitu digunakan oleh saya sebagai persona di internet,dan rencananya saya akan membuat cerita pendek mengenai latar belakang
-            karakter-karakter saya,untuk saat ini belum ada visual yang dibuat tetapi anda bisa menggunakan imajinasi anda untuk membayangkan penampilan karakter-karakter saya yang akan saya tunjukkan.
+            Saya memiliki sebuah set karakter original yang sering saya gunakan sebagai persona di dunia maya, khususnya di game Minecraft dan gacha club ataupun gacha life,satu set karakter original ini adalah orignal dan alter,mereka
+            memiliki nama dan biodatanya tersendiri.
           </p>
-          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start" style="animation: slide-right 4s ease forwards;">
-            <h4 class="ft-montserrat">Sergia</h4>
-            <p>
-              Sergia, adalah karakter degan tinggi 160cm dan kelamin laki-laki,ia biasanya digunakan oleh saya sebagai foto profil yang anda bisa temui di beberapa akun sosial media saya. Karakteristik lainya dari sergia adalah berambut
-              hitam,mata monokromatik hitam dan kuning emas,dan ia biasanya megenakan jaket warna hijau gelap polos juga celana pendek.
-            </p>
-          </div>
-          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start" style="animation: slide-right 4.1s ease forwards;">
-            <h4 class="ft-montserrat">Mitovina</h4>
-            <p>
-              Mitovina, adalah karakter degan tinggi 167cm dan kelamin laki-laki,ia adalah kembaran laki-laki dari Mitosino, karakteristik lainya dari Mitovina adalah rambut dan mata berwarna ruby,ia biasanya mengenakan kaos merah,dan juga
-              jaket berwarna hitam,serta celana panjang hitam.
-            </p>
-          </div>
-          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start" style="animation: slide-right 4.2s ease forwards;">
-            <h4 class="ft-montserrat">Mitosino</h4>
-            <p>
-              Mitosino, adalah karakter degan tinggi 167cm dan kelamin perempuan,ia adalah kembaran perempuan dari Mitovina, karakteristik lainya dari Mitosino adalah rambut dan mata berwarna ruby,ia biasanya mengenakan kaos merah,dan juga
-              jaket berwarna hitam,serta celana panjang hitam,mirip seperti kembarannya.
-            </p>
-          </div>
-          <div class="container mx-3 py-2 bg-opl-50 mb-2 shadow-sm text-start" style="animation: slide-right 4.3s ease forwards;">
-            <h4 class="ft-montserrat">Alnitosa</h4>
-            <p>Alnitosa, adalah karakter degan tinggi 148cm dan kelamin perempuan, karakteristik lainnya dari Alnitosa adalah rambut dan mata berwarna zamrud,ia biasanya mengenakan jaket berwarna abu-abu dan rok berwarna biru.</p>
-          </div>
-          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start" style="animation: slide-right 4.4s ease forwards;">
-            <h4 class="ft-montserrat">Shikora</h4>
-            <p>Shikora, adalah karakter degan tinggi 168cm dan berkelamin laki-laki, karakteristik lainnya dari Shikora adalah rambut dan mata berwarna coklat,ia biasanya mengenakan jaket berwarna pink,dan celana cargo hitam.</p>
+          <div class="container mx-3 py-2 bg-op-50 mb-2 shadow-sm text-start row d-flex align-items-center" style="animation: slide-right 4s ease forwards;">
+            <div class="col-lg-2 col-6">
+              <img src="IMG/IMG_OC1.png" />
+            </div>
+            <div class="col-lg-2 col-6">
+              <img src="IMG/IMG_OC2.png" />
+            </div>
+            <div class="col-lg-8 col-12">
+              <h4 class="ft-montserrat">Sergia</h4>
+              <p>
+                Sergia, adalah karakter original saya yang sering digunakan sebagai persona. Ia biasa saya gunakan pada game <i>Minecraft</i> dan <i>DND</i>,karakter ini juga saya gunakan sebagai maskot dan juga ikon profil saya pada
+                beberapa sosial media.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Footer -->
     <div class="bg-dark-yk text-light text-center py-3" id="sosmed">
       <p id="links">
         <a href="https://www.instagram.com/Kiki012.id/" class="btn btn-sm btn-YK"><i class="bi bi-instagram"></i></a>

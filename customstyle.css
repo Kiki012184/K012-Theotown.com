@@ -5,9 +5,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* Generated pallete from: https://coolors.co/f7f7ff-157f1f-abdf75-60656f-131112 */
 :root {
   --YKGG-MAIN: #000015;
   --YKGG-PRIM: #efeeee;
+  --YKCL-01: #F7F7FF; 
+  --YKCL-02: #157F1F;
+  --YKCL-025: #157F1F99;
+  --YKCL-03: #ABDF75;
+  --YKCL-035: #ABDF7599;
+  --YKCL-04: #60656F;
+  --YKCL-05: #131112;
 }
 @keyframes background-pan {
   from {
@@ -30,8 +39,18 @@ body {
 .ft-montserrat {
   font-family: "Montserrat", sans-serif;
 }
+.bgnav-yk {
+  background-color: var(--YKCL-02);
+  font-family: "Montserrat", sans-serif !important;
+}
+.bgnavdrd-yk {
+  background-color: var(--YKCL-02);
+  border: 1px solid var(--YKCL-01);
+  border-radius: 0px;
+}
 .bg-body-yk {
-  background-color: var(--YKGG-MAIN) !important;
+  background-color: var(--YKCL-05) !important;
+  color: var(--YKCL-01);
   /*background-image: url('IMG/IMG_WEBBG_VER.png');
   background-size: cover;
   background-position: center center;
@@ -76,12 +95,12 @@ body {
   padding: 2rem;
 }
 .bg-dark-yk {
-  background-color: var(--YKGG-MAIN);
-  color: var(--YKGG-PRIM);
+  background-color: var(--YKCL-05);
+  color: var(--YKCL-01);
 }
 .bg-sec-yk {
-  background-color: #222235;
-  color: var(--YKGG-PRIM);
+  background-color: var(--YKCL-04);
+  color: var(--YKCL-01);
 }
 @keyframes slide-left {
   from {
@@ -114,16 +133,17 @@ body {
 .container-section {
   padding: 4rem 0;
   text-align: center;
-  color: #fff;
 }
 .cnt-yk-w60 {
   max-width: 40rem;
 }
 .bg-op-50 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--YKCL-025);
+  color: var(--YKCL-01);
 }
 .bg-opl-50 {
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: var(--YKCL-035);
+  color: var(--YKCL-01);
 }
 .fw-italic {
   font-weight: italic;
@@ -168,24 +188,30 @@ body {
 }
 .btn-YK {
   background-color: transparent;
-  color: var(--YKGG-PRIM);
-  border: 1px solid var(--YKGG-PRIM);
+  color: var(--YKCL-01);
+  border: 1px solid var(--YKCL-01);
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: "Montserrat",Sans-Serif;
   font-size: 1rem;
   font-weight: bold;
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   border-radius: 0;
+  cursor: pointer;
 }
 .btn-YK:hover {
-  border-color: var(--YKGG-PRIM);
-  color: var(--YKGG-MAIN);
-  background-color: var(--YKGG-PRIM);
+  border-color: var(--YKCL-01);
+  color: var(--YKCL-05);
+  font-family: "Montserrat",Sans-Serif;
+  background-color: var(--YKCL-01);
+  cursor: wait;
 }
 .btn-YK:active {
-  background-color: var(--YKGG-PRIM);
-  color: var(--YKGG-MAIN);
+  background-color: var(--YKCL-01);
+  font-family: "Montserrat",Sans-Serif;
+  color: var(--YKCL-05);
+  cursor: wait;
 }
 @keyframes fadeInDown {
   0% {
