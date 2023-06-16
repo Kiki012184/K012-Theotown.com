@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
 
 /* Generated pallete from: https://coolors.co/f7f7ff-157f1f-abdf75-60656f-131112 */
 :root {
@@ -15,16 +16,8 @@
   --YKCL-025: #157F1F99;
   --YKCL-03: #ABDF75;
   --YKCL-035: #ABDF7599;
-  --YKCL-04: #60656F;
+  --YKCL-04: #181617;
   --YKCL-05: #131112;
-}
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  to {
-    background-position: 200% center;
-  }
 }
 body {
   font-family: "Cabin", sans-serif;
@@ -39,14 +32,8 @@ body {
 .ft-montserrat {
   font-family: "Montserrat", sans-serif;
 }
-.bgnav-yk {
-  background-color: var(--YKCL-02);
-  font-family: "Montserrat", sans-serif !important;
-}
-.bgnavdrd-yk {
-  background-color: var(--YKCL-02);
-  border: 1px solid var(--YKCL-01);
-  border-radius: 0px;
+.ft-orbitron {
+  font-family: "Orbitron", arial;
 }
 .bg-body-yk {
   background-color: var(--YKCL-05) !important;
@@ -61,21 +48,13 @@ body {
   background-size: 200%;
   animation: background-pan 10s linear infinite;*/
 }
-.webheader-yk {
-  min-height: 8rem;
-  background: url("IMG/IMG_CARDHD.png") no-repeat center center;
-  background-size: cover;
-  height: 6rem;
-  width: 100%;
-  text-align: center center;
-}
 .jumbotron {
   position: relative;
   background: url("IMG/IMG_WEBBG.png") no-repeat center center;
   font-family: "Orbitron", sans-serif;
   background-size: cover;
   padding: 0;
-  min-height: 8rem;
+  min-height: 10vh;
   color: white;
 }
 
@@ -83,6 +62,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
+  align-content: center center;
   left: 0;
   width: 100%;
   height: 100%;
@@ -102,17 +82,10 @@ body {
   background-color: var(--YKCL-04);
   color: var(--YKCL-01);
 }
-@keyframes slide-left {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+.bg-prim-yk {
+  background-color: var(--YKCL-02);
+  color: var(--YKCL-01);
 }
-
 @keyframes slide-right {
   from {
     transform: translateX(-100%);
@@ -123,40 +96,37 @@ body {
     opacity: 1;
   }
 }
-
-/* Delay the animations for smoother effect */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* Adjust the initial position */
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
 .animated-section {
   animation-delay: 0.5s;
 }
-
-/* Additional styling for demonstration purposes */
-.container-section {
-  padding: 4rem 0;
-  text-align: center;
+.col-plugin {
+  border: 1px solid var(--YKCL-01);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0.33rem;
 }
 .cnt-yk-w60 {
-  max-width: 40rem;
-}
-.bg-op-50 {
-  background-color: var(--YKCL-025);
-  color: var(--YKCL-01);
-}
-.bg-opl-50 {
-  background-color: var(--YKCL-035);
-  color: var(--YKCL-01);
+  max-width: 50rem;
 }
 .fw-italic {
   font-weight: italic;
 }
 .fw-black {
-  font-weight: black;
-}
-.ln-dash {
-  border: 1px dashed var(--YKGG-PRIM);
-  padding-top: 0vh;
-  padding-bottom: 0vh;
-  margin-bottom: 0.75rem;
-  margin-top: 0vh;
+  font-weight: 900;
 }
 .ft-ngnl {
   color: var(--YKGG-PRIM);
@@ -168,23 +138,8 @@ body {
 .ft-ngnl:after {
   content: " 」";
 }
-.fadein-yk {
-  opacity: 0;
-  animation: fadein 2.5s forwards;
-}
-.fadein-yk h2 {
-  animation-delay: 0.2s;
-}
-.fadein-yk p {
-  animation-delay: 0.6s;
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.txt-jp {
+  font-family: 'Zen Old Mincho', serif;
 }
 .btn-YK {
   background-color: transparent;
