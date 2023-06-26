@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17px" height="6px">
+  <!-- I -->
+  <rect x="0" y="0" width="3px" height="1px" fill="#0033ff" />
+  <rect x="1" y="0" width="1px" height="6px" fill="#0033ff" />
+  <rect x="0" y="5" width="11px" height="1px" fill="#0033ff" />
+  <!-- T -->
+    <rect x="4" y="0" width="3px" height="1px" fill="#0033ff" />
+    <rect x="5" y="0" width="1px" height="4px" fill="#0033ff" />
+    <!-- P -->
+      <rect x="8" y="0" width="2px" height="1px" fill="#0033ff" />
+      <rect x="8" y="0" width="1px" height="4px" fill="#0033ff" />
+      <rect x="8" y="2" width="2px" height="1px" fill="#0033ff" />
+      <rect x="10" y="1" width="1px" height="1px" fill="#0033ff" />
+      <!-- SHAPE -->
+        <rect x="12" y="0" width="2px" height="1px" fill="#ffb200" />
+        <rect x="14" y="1" width="1px" height="1px" fill="#ffb200" />
+        <rect x="12" y="5" width="2px" height="1px" fill="#ffb200" />
+        <rect x="14" y="4" width="1px" height="1px" fill="#ffb200" />
+        <rect x="15" y="2" width="1px" height="2px" fill="#ffb200" />
+        <rect x="12" y="2" width="2px" height="2px" fill="#ffb200" />
+</svg>

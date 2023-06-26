@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21px" height="6px">
+  <!-- ER -->
+  <rect x="0" y="0" width="1px" height="6px" fill="#ffcc00" />
+  <rect x="0" y="0" width="5px" height="1px" fill="#ffcc00" />
+  <rect x="0" y="2" width="2px" height="1px" fill="#ffcc00" />
+  <rect x="0" y="5" width="3px" height="1px" fill="#ffcc00" />
+  <rect x="5" y="1" width="1px" height="1px" fill="#ffcc00" />
+  <rect x="4" y="2" width="1px" height="1px" fill="#ffcc00" />
+  <rect x="5" y="3" width="1px" height="3px" fill="#ffcc00" />
+  <!-- V -->
+    <rect x="7" y="0" width="1px" height="4px" fill="#ffcc00" />
+    <rect x="9" y="0" width="1px" height="4px" fill="#ffcc00" />
+    <rect x="8" y="4" width="1px" height="2px" fill="#ffcc00" />
+    <!-- P -->
+      <rect x="11" y="0" width="1px" height="6px" fill="#ffcc00" />
+      <rect x="11" y="0" width="2px" height="1px" fill="#ffcc00" />
+      <rect x="11" y="2" width="2px" height="1px" fill="#ffcc00" />
+      <rect x="13" y="1" width="1px" height="1px" fill="#ffcc00" />
+      <!-- SHAPE -->
+        <rect x="15" y="2" width="1px" height="2px" fill="#16171b" />
+        <rect x="20" y="2" width="1px" height="2px" fill="#16171b" />
+        <rect x="17" y="0" width="2px" height="1px" fill="#16171b" />
+        <rect x="17" y="5" width="2px" height="1px" fill="#16171b" />
+        <rect x="17" y="2" width="2px" height="2px" fill="#16171b" />
+</svg>

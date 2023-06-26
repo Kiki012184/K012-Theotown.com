@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14px" height="6px">
+  <!-- YWP -->
+    <rect x="0" y="0" width="1px" height="2px" fill="#685333" />
+    <rect x="2" y="0" width="1px" height="2px" fill="#685333" />
+    <rect x="1" y="2" width="1px" height="4px" fill="#685333" />
+    <rect x="1" y="4" width="5px" height="1px" fill="#685333" />
+    <rect x="3" y="3" width="1px" height="2px" fill="#685333" />
+    <rect x="5" y="0" width="1px" height="6px" fill="#685333" />
+    <rect x="5" y="0" width="2px" height="1px" fill="#685333" />
+    <rect x="5" y="2" width="2px" height="1px" fill="#685333" />
+    <rect x="7" y="1" width="1px" height="1px" fill="#685333" />
+    <!-- SHAPE -->
+    <rect x="13" y="0" width="1px" height="6px" fill="#685333" />
+    <rect x="10" y="4" width="5px" height="1px" fill="#685333" />
+    <rect x="11" y="1" width="1px" height="3px" fill="#b3b3b3" />
+    <rect x="9" y="5" width="1px" height="1px" fill="#685333" />
+    <rect x="11" y="3" width="1px" height="2px" fill="#685333" />
+    <rect x="12" y="2" width="2px" height="1px" fill="#685333" />
+</svg>
