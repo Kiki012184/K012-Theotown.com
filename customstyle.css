@@ -82,7 +82,7 @@ body {
 .jumbotron-header {
   font-family: "Montserrat", Sans-Serif;
   margin-bottom: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 4px;
 }
 @media (min-width: 1024px) {
@@ -185,130 +185,159 @@ body {
   color: var(--YKCL-01);
 }
 
-.col-ykpl {
-  border: 1px solid var(--YKCL-01);
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+.crpl-yk {
+  border: 2px solid var(--YKCL-01);
+  padding: 0px;
+  color: var(--YKCL-01);
+  margin-bottom: 0.5rem;
   /*background-color: red;*/
 }
-.col-ykpl-img {
-  background-color: rgba(33,163,255,.5);
+.crpli-yk {
+  background-color: rgba(255,132,39,.25);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.col-ykpl-img1 {
-  background-color: rgba(0,46,240,.5);
-}
-.col-ykpl-img2 {
-  background-color: rgba(102,146,95,.5);
-}
-.col-ykpl-img3 {
-  background-color: rgba(255,204,0,.5);
-}
-.col-ykpl-img4 {
-  background-color: rgba(205,20,20,.5);
-}
-.col-ykpl-img5 {
-  background-color: rgba(104,83,51,.5);
-}
-.col-ykpl-img6 {
-  background-color: rgba(255,153,0,.5);
-}
-.col-ykpl-img img {
+.crpli-yk img {
   image-rendering: pixelated !important;
   min-height: 3rem;
   max-height: 16rem;
 }
-.col-ykpl-item {
-  background-image: linear-gradient(to top, transparent,rgba(33,163,255,.5));
+.crplb-yk {
+  background-image: linear-gradient(to top, transparent,rgba(255,132,39,.25));
+  padding-left: 0.25rem;
 }
-.col-ykpl-item1 {
-  background-image: linear-gradient(to top, transparent,rgba(0,46,240,.5));
-}
-.col-ykpl-item2 {
-  background-image: linear-gradient(to top, transparent,rgba(102,146,95,.5));
-}
-.col-ykpl-item3 {
-  background-image: linear-gradient(to top, transparent,rgba(255,204,0,.5));
-}
-.col-ykpl-item4 {
-  background-image: linear-gradient(to top, transparent,rgba(205,20,20,.5));
-}
-.col-ykpl-item5 {
-  background-image: linear-gradient(to top, transparent,rgba(104,83,51,.5));
-}
-.col-ykpl-item6 {
-  background-image: linear-gradient(to top, transparent,rgba(255,153,0,.5));
+.crplf-yk {
+  margin-top: auto;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-.col-ykoc {
-  border: 1px solid var(--YKCL-01);
+.croc {
+  border: 2px solid var(--YKCL-01);
+  padding: 0px;
+  margin-bottom: 0.5rem;
   /*background-color: red;*/
 }
-.col-ykoc-img {
-  background-image: linear-gradient(to bottom, transparent,rgba(0,0,0,.5));
-}
-.col-ykoc-img-OC1 {
+.croci1 {
   background-image: linear-gradient(to bottom, transparent, transparent ,var(--YKCL-OC1)) !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.col-ykoc-img-OC2 {
-  background-image: linear-gradient(to bottom, transparent, transparent ,var(--YKCL-OC2)) !important;
-}
-.col-ykoc-img-OC3 {
-  background-image: linear-gradient(to bottom, transparent, transparent ,var(--YKCL-OC3)) !important;
-}
-.col-ykoc-img img {
+.croci1 img {
   max-height: 16rem;
 }
-.col-ykoc-item {
-  border-top: 1px solid var(--YKCL-01);
-  background-color: rgba(0,0,0,.5);
+.croci2 {
+  background-image: linear-gradient(to bottom, transparent, transparent ,var(--YKCL-OC2)) !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.col-ykoc-item-OC1 {
+.croci2 img {
+  max-height: 16rem;
+}
+.croci3 {
+  background-image: linear-gradient(to bottom, transparent, transparent ,var(--YKCL-OC3)) !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.croci3 img {
+  max-height: 16rem;
+}
+.crocb1 {
   background-color: var(--YKCL-OC1) !important;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
 }
-.col-ykoc-item-OC2 {
+.crocb2 {
   background-color: var(--YKCL-OC2) !important;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
 }
-.col-ykoc-item-OC3 {
+.crocb3 {
   background-color: var(--YKCL-OC3) !important;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
 }
 
-.col-yknt {
-  border: 1px solid var(--YKCL-01);
+.crnt {
+  border: 2px solid var(--YKCL-01);
+  padding: 0px;
+  margin-bottom: 0.5rem;
   /*background-color: red;*/
 }
-.col-yknt-img {
+.crnt-img {
   background-image: linear-gradient(to bottom, transparent,rgba(0,0,0,.5));
 }
-.col-yknt-img1 {
+.crnt-img1 {
   background-color: rgba(132,81,48,.5);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.col-yknt-img2 {
+.crnt-img2 {
   background-color: rgba(16,128,66,.5);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.col-yknt-img3 {
+.crnt-img3 {
   background-color: rgba(206,17,38,.5);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.col-yknt-img4 {
+.crnt-img4 {
   background-color: rgba(252,209,22,.5);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.col-yknt-img img {
+.crnt-img img {
   max-height: 16rem;
 }
-.col-yknt-item {
+.crnt-item {
   border-top: 1px solid var(--YKCL-01);
   background-color: rgba(0,0,0,.5);
 }
-.col-yknt-item1 {
+.crnt-item1 {
   background-image: linear-gradient(to top, transparent,rgba(132,81,48,.5)) !important;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.25rem;
 }
-.col-yknt-item2 {
+.crnt-item2 {
   background-image: linear-gradient(to top, transparent ,rgba(16,128,66,.5)) !important;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.25rem;
 }
-.col-yknt-item3 {
+.crnt-item3 {
   background-image: linear-gradient(to top, transparent,rgba(206,17,38,.5)) !important;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.25rem;
 }
-.col-yknt-item4 {
+.crnt-item4 {
   background-image: linear-gradient(to top, transparent ,rgba(252,209,22,.5)) !important;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.25rem;
 }
 
 .btn-YK {
