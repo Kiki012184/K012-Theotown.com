@@ -1,32 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-/* Generated pallete from: https://coolors.co/f7f7ff-157f1f-abdf75-60656f-131112 */
+/* Generated pallete from: https://coolors.co/f7f7ff-4d8b31-dde8b9-181617-ff8427 */
 :root {
-  --YKGG-MAIN: #000015;
-  --YKGG-PRIM: #efeeee;
-  --YKCL-01: rgb(247, 247, 255); /* White*/
-  --YKCL-02: rgb(77, 139, 49); /*Dark Green*/
-  --YKCL-025: rgba(77, 139, 49, 0.5); /*Dark Green 50% Opacity*/
-  --YKCL-03: rgb(221, 232, 185); /*Light Green*/
-  --YKCL-035: rgba(221, 232, 185, 0.5); /*Light Green 50% Opacity*/
-  --YKCL-04: rgb(24, 22, 23); /* Black 1*/
-  --YKCL-05: rgb(19, 17, 18); /*Black 2*/
-  --YKCL-06: rgb(255, 132, 39); /* Digital Fox orange */
-  --YKCL-OC1: rgba(26, 63, 34, 0.5); /*OC 1 Dominant Green*/
-  --YKCL-OC2: rgba(26, 56, 21, 0.5); /* OC 2 Dominant Dark Green*/
-  --YKCL-OC3: rgba(178, 110, 109, 0.5); /* OC 3 Dominant Pink */
-  --YKCL-NT1: rgba(132, 81, 48, 0.5); /* Yakanesia Orange */
-  --YKCL-NT2: rgba(16, 128, 66, 0.5); /* Brastokavia Green*/
-  --YKCL-NT3: rgba(206, 17, 38, 0.5); /* Corksonvile Red*/
-  --YKCL-NT4: rgba(252, 209, 22, 0.5); /*Flugenich Yellow*/
-  --animate-delay: 0.9s;
+  --YKCL-01: rgb(247, 247, 255); /* White #f7f7ff */
+  --YKCL-02: rgb(77, 139, 49); /*Dark Green #4d8b31 */
+  --YKCL-03: rgb(221, 232, 185); /*Light Green #dde8b9 */
+  --YKCL-04: rgb(24, 22, 23); /* Black 1 #181617 */
+  --YKCL-05: rgb(45, 43, 44); /*Black 2 #131117 */
+  --YKCL-06: rgb(255, 132, 39); /* Digital Fox orange #ff8427 */
 }
 /* Elements */
 body {
@@ -38,306 +22,171 @@ svg {
   max-width: 100%;
 }
 
-/* Essential */
-.bg-body-yk {
-  background-color: var(--YKCL-05) !important;
+/* Classes */
+.body-yk {
+  background-color: var(--YKCL-06);
   color: var(--YKCL-01);
-  /*background-image: url('IMG/IMG_WEBBG_VER.png');
+  font-family: "Cabin", Sans-Serif;
+  /*background-image: url("IMG/IMG_WEBBG.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;*/
-  /*background: 
-  linear-gradient(to right,red, orange, yellow,lime,green,cyan,blue,indigo,purple,pink,red)
-  ;
-  background-size: 200%;
-  animation: background-pan 10s linear infinite;*/
+  background-position: center center;*/
 }
-
-/* Jumbotron */
-.jumbotron {
-  position: relative;
-  background: url("IMG/IMG_WEBBG.png") no-repeat center center;
-  background-size: cover;
-  padding: 0;
-  min-height: 12vh;
-  color: var(--YKCL-01);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.jumbotron::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  align-content: center center;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-}
-.jumbotron-content {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-.jumbotron-header {
-  font-family: "Montserrat", Sans-Serif;
-  margin-bottom: none;
-  text-align: center;
-  color: var(--YKCL-01);
-}
-.jumbotron-link {
-  margin-top: 0.25rem;
-  letter-spacing: 0.5rem;
-  width: 100%;
-  text-align: center;
-}
-.jumbotron-link a {
-  color: var(--YKCL-01);
-  transition: color 0.25s ease-in-out;
-  text-align: center;
-  cursor: pointer;
-}
-.jumbotron-link a:hover {
-  color: var(--YKCL-06);
-  cursor: wait;
-}
-
-/* Custom Class 1 */
-.bg-dark-yk {
-  background-color: var(--YKCL-05);
-  color: var(--YKCL-01);
-}
-.bg-sec-yk {
-  background-color: var(--YKCL-04);
-  color: var(--YKCL-01);
-}
-.bg-prim-yk {
-  background-color: var(--YKCL-02);
-  color: var(--YKCL-01);
-}
-.img-px {
-  image-rendering: pixelated;
-}
-.cnt-yk-w60 {
-  max-width: 50rem;
-}
-
-/* Typography */
-.fw-italic {
-  font-weight: italic;
-}
-.fw-black {
-  font-weight: 900;
-}
-.fw-thin {
-  font-weight: 300 !important;
-}
-.ft-ngnl {
-  color: var(--YKCL-01);
-  text-align: center;
-}
-.ft-ngnl:before {
-  content: "「 ";
-}
-.ft-ngnl:after {
-  content: " 」";
-}
-.txt-jp {
-  font-family: "Zen Old Mincho", serif;
-}
-.ft-ps2p {
-  font-family: "Press Start 2P", arial;
-}
-.ft-vt {
-  font-family: "VT323", arial;
+.ft-raleway {
+  font-family: "Raleway", Sans-Serif;
+  font-weight: bold;
 }
 .ft-montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Sans-Serif;
+  font-weight: bold;
 }
-.ft-orbitron {
-  font-family: "Orbitron", arial;
-}
-
-/* Bootstrap Override */
-.navbar-brand img {
-  min-height: 32px !important;
-}
-.card-footer {
-  border-top: none;
-  padding-top: none;
-}
-
-/* Custom List Group*/
-.list-group-yk {
-  background-color: transparent;
-}
-.list-group-yk li {
-  background-color: transparent !important;
-  border-bottom: 1px solid var(--YKCL-01) !important;
+.jumbotron-yk {
+  background-image: url("IMG/IMG_WEBBG.png");
+  border-bottom: 2px solid var(--YKCL-03);
   color: var(--YKCL-01);
 }
-
-/* Custom Grid */
-.ykgd-3,
-.ykgd-2,
-.ykgd-3-1 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.5rem 0.25rem;
-}
-@media (min-width: 992px) {
-  .ykgd-3,
-  .ykgd-3-1 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 992px) {
-  .ykgd-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Plugin custom cards*/
-.card-pl-yk {
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-025);
-  padding: 0px;
-  transition: background-color 0.5s ease-in-out, color 0.25s ease-in-out;
-  color: var(--YKCL-01);
-  /*background-color: red;*/
-}
-.card-pl-yk:hover {
+.nav-yk {
   background-color: var(--YKCL-02);
+  color: var(--YKCL-01) !important;
+  font-family: "Montserrat", Sans-Serif !important;
 }
-.card-pli-yk {
+.footer-yk {
+  background-color: var(--YKCL-02);
+  color: var(--YKCL-01);
+  font-family: "Montserrat", Sans-Serif;
+  border-top: 2px solid var(--YKCL-03);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card-pli-yk img {
-  image-rendering: pixelated !important;
-  min-height: 3rem;
-  max-height: 16rem;
-}
-.card-plb-yk {
-  padding-left: 0.25rem;
-}
-.card-plf-yk {
-  margin-top: auto;
-  padding-bottom: 1rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-
-/* RPNT custom cards*/
-.card-nt1 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-NT1);
-}
-.card-nt2 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-NT2);
-}
-.card-nt3 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-NT3);
-}
-.card-nt4 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-NT4);
-}
-.card-nti {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.card-nti img {
-  max-height: 16rem;
-}
-.card-ntb {
-  padding-left: 1rem;
-  padding-right: 0.25rem;
-  color: var(--YKCL-01) !important;
-}
-
-/* OCS custom cards */
-.card-oc1 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-OC1) !important;
-}
-.card-oc2 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-OC2) !important;
-}
-.card-oc3 {
-  padding: 0px;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-direction: column !important;
-  background-color: var(--YKCL-OC3) !important;
-}
-.card-oci {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.25rem;
-}
-.card-oci img {
-  max-height: 16rem;
-}
-.card-ocb {
-  padding-left: 0.5rem;
-  padding-bottom: 1rem;
-  color: var(--YKCL-01);
-}
-
-/* Custom Button*/
-.btn-YK {
-  background-color: transparent;
-  color: var(--YKCL-01);
-  border: 2px solid var(--YKCL-01);
   text-align: center;
-  text-decoration: none;
-  font-family: "Montserrat", Sans-Serif;
-  font-weight: 600;
-  transition: border-color 0.1s ease-in-out, color 0.3s ease-in-out, background-color 0.5s ease-in-out;
-  border-radius: 0.25rem;
-  cursor: pointer;
 }
-.btn-YK:hover {
-  border-color: var(--YKCL-01);
-  color: var(--YKCL-05);
-  font-family: "Montserrat", Sans-Serif;
-  background-color: var(--YKCL-01);
-  cursor: wait;
+.cnt1-yk {
+  background-color: var(--YKCL-04);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.btn-YK:active {
-  background-color: var(--YKCL-01);
-  font-family: "Montserrat", Sans-Serif;
-  color: var(--YKCL-05);
-  cursor: wait;
+.cnt2-yk {
+  background-color: var(--YKCL-05);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.card-yk {
+  background-color: var(--YKCL-02);
+  color: var(--ykcl-04);
+  margin-bottom: 1rem;
+  /*box-shadow: 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02);*/
+}
+.ft-cardyk {
+  font-family: "Raleway", Sans-Serif;
+  font-weight: bold;
+  border-bottom: 2px solid var(--YKCL-01);
+}
+.mhyk-1 {
+  min-height: 2rem;
+}
+.mhyk-2 {
+  max-height: 12rem;
+}
+.bgpl-itp {
+  background-image: url("IMG/BG_ITP.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bgpl-natp {
+  background-image: url("IMG/BG_natp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bgpl-ervp {
+  background-image: url("IMG/BG_ERVP.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bgpl-sarr {
+  background-image: url("IMG/BG_SARR.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bgpl-ywp {
+  background-image: url("IMG/BG_YWP.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bgpl-misc {
+  background-image: url("IMG/BG_MISC.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tit-yk {
+  border-top: 2px solid var(--YKCL-01);
+  border-bottom: 2px solid var(--YKCL-01);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: bold;
+  /*background-color: rgba(24,22,23,.60);*/
+  background-image: linear-gradient(to right, transparent, rgba(24, 22, 23, 0.6), rgba(24, 22, 23, 0.6), rgba(24, 22, 23, 0.6), transparent);
+}
+.bgnt-yk {
+  background-image: url("IMG/svg_yk.svg");
+  background-position: center;
+  background-size: cover;
+}
+.bgnt-br {
+  background-image: url("IMG/svg_br.svg");
+  background-position: center;
+  background-size: cover;
+}
+.bgnt-cv {
+  background-image: url("IMG/svg_cv.svg");
+  background-position: center;
+  background-size: cover;
+}
+.bgnt-fn {
+  background-image: url("IMG/svg_fn.svg");
+  background-position: center;
+  background-size: cover;
+}
+.titoc-yk {
+  background-image: linear-gradient(to bottom, transparent, transparent, rgba(24, 22, 23, 0.25));
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 8rem;
+}
+.bgoc-1 {
+  background-image: url("IMG/IMG_OC1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left left;
+}
+.bgoc-2 {
+  background-image: url("IMG/IMG_OC2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left left;
+}
+.bgoc-3 {
+  background-image: url("IMG/IMG_OC3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left left;
+}
+@media (min-width: 600px) {
+  .titoc-yk {
+    background-image: linear-gradient(to right, var(--YKCL-02), transparent, rgba(24, 22, 23, 0.25)) !important;
+    padding-top: 16rem;
+  }
+  .bgoc-1 {
+    min-height: 630px;
+  }
+  .bgoc-2 {
+    min-height: 630px;
+  }
+  .bgoc-3 {
+    min-height: 630px;
+  }
+}
+.bg-dark-yk {
+  background-color: rgba(0, 0, 0, 0.5);
 }
