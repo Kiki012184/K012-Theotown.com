@@ -11,11 +11,22 @@
   --YKCL-04: rgb(24, 22, 23); /* Black 1 #181617 */
   --YKCL-05: rgb(45, 43, 44); /*Black 2 #131117 */
   --YKCL-06: rgb(255, 132, 39); /* Digital Fox orange #ff8427 */
+  
+  --TTCL-01: #CEE5ED; /*Border*/
+  --TTCL-02: #3D5F6B; /*Background*/
+  --TTCL-03: #60828E; /*Overlay*/
+  
+  --YKGR-01: linear-gradient(to bottom,#191B55,#7F246C); /* Gradient NGNL */
+  
+  --YKFT-PRIM: "Cabin",Sans-Serif;
+  --YKFT-SEC: "Montserrat",Sans-Serif;
+  
+  
 }
 /* Elements */
 body {
   font-family: "Cabin", sans-serif;
-  color: var(--bs-light);
+  color: var(--YKCL-01);
 }
 img,
 svg {
@@ -42,7 +53,7 @@ svg {
 }
 .jumbotron-yk {
   background-image: url("IMG/IMG_WEBBG.png");
-  border-bottom: 2px solid var(--YKCL-03);
+  min-height: 8rem;
   color: var(--YKCL-01);
 }
 .nav-yk {
@@ -54,21 +65,113 @@ svg {
   background-color: var(--YKCL-02);
   color: var(--YKCL-01);
   font-family: "Montserrat", Sans-Serif;
-  border-top: 2px solid var(--YKCL-03);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-.cnt1-yk {
-  background-color: var(--YKCL-04);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.cnt2-yk {
-  background-color: var(--YKCL-05);
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.child-container {
+  width: 75vw;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .child-container {
+    width: 100vw;
+  }
+}
+
+.bg-yk-dark {
+  background-color: var(--YKCL-04) !important;
+}
+
+.bg-theotown {
+  background-image: url("IMG/20231110_201219.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bg-OC {
+  background-image: var(--YKGR-01)/*url("IMG/BG_OC.jpg")*/;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-theotown {
+  background-color: var(--TTCL-02);
+  border: 3px solid var(--TTCL-01);
+  color: var(--YKCL-01);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "Cabin",Sans-Serif !important;
+}
+.card-theotown .card-img-top img {
+  border-radius: 1rem !important;
+  margin-bottom: 0.5rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  max-width: calc(100% - 0.5rem);
+}
+.card-theotown .card-body,.card-footer {
+  background-color: var(--TTCL-03);
+  margin-bottom: 0.5rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  border-radius: 1rem !important;
+}
+
+.container-nations {
+  background-color: var(--YKCL-01);
+  border-radius: 0px;
+  color: var(--YKCL-04);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.container-nations p {
+  margin-top: 1rem;
+}
+
+.container-orichar {
+  background-color: transparent;
+}
+.container-orichar .content-orichar{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.kanji-with-hiragana {
+  position: relative;
+  font-family: "Montserrat",Sans-Serif;
+}
+.kanji-with-hiragana::after {
+  content: attr(data-hiragana); /* Get the data-hiragana attribute value */
+  display: block;
+  margin-top: 2px; /* Adjust the spacing between Kanji and Hiragana */
+  font-size: calc(1rem - 8px); /* Customize the font size */
+}
+.btn-ftyk {
+  color: var(--YKCL-01);
+  background-color: transparent;
+}
+.cnt-fttyk {
+  margin-bottom: 0.25rem;
+}
+
 .card-yk {
   background-color: var(--YKCL-02);
   color: var(--ykcl-04);
@@ -80,72 +183,7 @@ svg {
   font-weight: bold;
   border-bottom: 2px solid var(--YKCL-01);
 }
-.mhyk-1 {
-  min-height: 2rem;
-}
-.mhyk-2 {
-  max-height: 12rem;
-}
-.bgpl-itp {
-  background-image: url("IMG/BG_ITP.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.bgpl-natp {
-  background-image: url("IMG/BG_NATP.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.bgpl-ervp {
-  background-image: url("IMG/BG_ERVP.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.bgpl-sarr {
-  background-image: url("IMG/BG_SARR.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.bgpl-ywp {
-  background-image: url("IMG/BG_YWP.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.bgpl-misc {
-  background-image: url("IMG/BG_MISC.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.tit-yk {
-  border-top: 2px solid var(--YKCL-01);
-  border-bottom: 2px solid var(--YKCL-01);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-family: "Raleway", Sans-Serif;
-  font-weight: bold;
-  /*background-color: rgba(24,22,23,.60);*/
-  background-image: linear-gradient(to right, transparent, rgba(24, 22, 23, 0.6), rgba(24, 22, 23, 0.6), rgba(24, 22, 23, 0.6), transparent);
-}
-.bgnt-yk {
-  background-image: url("IMG/svg_yk.svg");
-  background-position: center;
-  background-size: cover;
-}
-.bgnt-br {
-  background-image: url("IMG/svg_br.svg");
-  background-position: center;
-  background-size: cover;
-}
-.bgnt-cv {
-  background-image: url("IMG/svg_cv.svg");
-  background-position: center;
-  background-size: cover;
-}
-.bgnt-fn {
-  background-image: url("IMG/svg_fn.svg");
-  background-position: center;
-  background-size: cover;
-}
+
 .titoc-yk {
   background-image: linear-gradient(to bottom, transparent, transparent, rgba(24, 22, 23, 0.25));
   padding-bottom: 1rem;
@@ -174,7 +212,7 @@ svg {
 }
 @media (min-width: 600px) {
   .titoc-yk {
-    background-image: linear-gradient(to right, var(--YKCL-02), transparent, rgba(24, 22, 23, 0.25)) !important;
+    background-image: linear-gradient(to right, transparent, rgba(24, 22, 23, 0.25)) !important;
     padding-top: 16rem;
   }
   .bgoc-1 {
