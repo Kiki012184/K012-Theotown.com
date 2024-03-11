@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 /* Generated pallete from: https://coolors.co/f7f7ff-4d8b31-dde8b9-181617-ff8427 */
 :root {
@@ -31,200 +34,164 @@ body {
 img,
 svg {
   max-width: 100%;
+  overflow-x: scroll;
 }
-
-/* Classes */
-.body-yk {
-  background-color: var(--YKCL-06);
-  color: var(--YKCL-01);
-  font-family: "Cabin", Sans-Serif;
-  /*background-image: url("IMG/IMG_WEBBG.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;*/
-}
-.ft-raleway {
-  font-family: "Raleway", Sans-Serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Nunito Sans",Sans-Serif;
   font-weight: bold;
 }
-.ft-montserrat {
-  font-family: "Montserrat", Sans-Serif;
-  font-weight: bold;
+p {
+  font-family: "Nunito",Sans-Serif;
 }
-.jumbotron-yk {
-  background-image: url("IMG/IMG_WEBBG.png");
-  min-height: 8rem;
+.ykbody {
+  background-color: var(--YKCL-04);
   color: var(--YKCL-01);
-}
-.nav-yk {
-  background-color: var(--YKCL-02);
-  color: var(--YKCL-01) !important;
-  font-family: "Montserrat", Sans-Serif !important;
-}
-.footer-yk {
-  background-color: var(--YKCL-02);
-  color: var(--YKCL-01);
-  font-family: "Montserrat", Sans-Serif;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.center-container {
-  display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Stack items vertically */
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  display: flex;
 }
-
-.child-container {
-  width: 75vw;
-  max-width: 100%;
-}
-
-@media (max-width: 767.98px) {
-  .child-container {
-    width: 100vw;
-  }
-}
-
-.bg-yk-dark {
-  background-color: var(--YKCL-04) !important;
-}
-
-.bg-theotown {
-  background-image: url("IMG/20231110_201219.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.bg-OC {
-  background-image: var(--YKGR-01)/*url("IMG/BG_OC.jpg")*/;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.card-theotown {
-  background-color: var(--TTCL-02);
-  border: 3px solid var(--TTCL-01);
-  color: var(--YKCL-01);
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-family: "Cabin",Sans-Serif !important;
-}
-.card-theotown .card-img-top img {
-  border-radius: 1rem !important;
-  margin-bottom: 0.5rem;
-  margin-right: 0.25rem;
-  margin-left: 0.25rem;
-  max-width: calc(100% - 0.5rem);
-}
-.card-theotown .card-body,.card-footer {
-  background-color: var(--TTCL-03);
-  margin-bottom: 0.5rem;
-  margin-right: 0.25rem;
-  margin-left: 0.25rem;
-  border-radius: 1rem !important;
-}
-
-.container-nations {
-  background-color: var(--YKCL-01);
-  border-radius: 0px;
-  color: var(--YKCL-04);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-bottom: 1rem;
-}
-.container-nations p {
-  margin-top: 1rem;
-}
-
-.container-orichar {
-  background-color: transparent;
-}
-.container-orichar .content-orichar{
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 1rem;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-}
-.kanji-with-hiragana {
-  position: relative;
-  font-family: "Montserrat",Sans-Serif;
-}
-.kanji-with-hiragana::after {
-  content: attr(data-hiragana); /* Get the data-hiragana attribute value */
-  display: block;
-  margin-top: 2px; /* Adjust the spacing between Kanji and Hiragana */
-  font-size: calc(1rem - 8px); /* Customize the font size */
-}
-.btn-ftyk {
-  color: var(--YKCL-01);
-  background-color: transparent;
-}
-.cnt-fttyk {
-  margin-bottom: 0.25rem;
-}
-
-.card-yk {
-  background-color: var(--YKCL-02);
-  color: var(--ykcl-04);
-  margin-bottom: 1rem;
-  /*box-shadow: 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02), 0 0 0.25rem var(--YKCL-02);*/
-}
-.ft-cardyk {
-  font-family: "Raleway", Sans-Serif;
-  font-weight: bold;
-  border-bottom: 2px solid var(--YKCL-01);
-}
-
-.titoc-yk {
-  background-image: linear-gradient(to bottom, transparent, transparent, rgba(24, 22, 23, 0.25));
-  padding-bottom: 1rem;
+.bento {
+  border: 1px solid var(--YKCL-05);
+  height: 100%;
+  width: 100%;
+  min-height: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 8rem;
+  align-items: flex-start;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0px;
+  overflow-x: hidden;
 }
-.bgoc-1 {
-  background-image: url("IMG/IMG_OC1.png");
+.bento p {
+  text-align: justify;
+}
+.bento h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 0.25rem;
+}
+.bento .logo {
+  min-width: 64px;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.bento .btn-ben {
+  border: 1px solid var(--YKCL-01);
+  color: var(--YKCL-01);
+  background-color: var(--YKCL-02);
+  font-weight: bold;
+  font-family: "Nunito",Sans-Serif;
+  min-width: 100%;
+  border-radius: 0px;
+}
+.bento .btn-ben:hover:active {
+  border: 1px solid var(--YKCL-02);
+  color: var(--YKCL-02);
+  background-color: var(--YKCL-01);
+}
+.bento .btn-ben:disabled {
+  border: 1px solid var(--YKCL-02);
+  color: var(--YKCL-02);
+}
+.bento .btn-ftr {
+  background-color: transparent;
+  color: var(--YKCL-01);
+  text-align: start;
+  border-radius: 0px;
+}
+.bento .btn-ftr:active:hover {
+  background-color: var(--YKCL-02);
+  color: var(--YKCL-01);
+}
+
+.txt-orgcl {
+  color: var(--YKCL-06);
+  font-family: "Nunito",Sans-Serif;
+}
+
+.bg-body-yk {
+  background: url(IMG/IMG_WEBBG.png);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left left;
 }
-.bgoc-2 {
-  background-image: url("IMG/IMG_OC2.png");
+.bg-logo {
+  background: linear-gradient(to top,rgba(0,0,0,0.5), transparent),url(IMG/IMG_CARDHD.png);
+  background-position: 25%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left left;
+  min-height: 8rem;
+  transition: background-position 0.5s ease;
 }
-.bgoc-3 {
-  background-image: url("IMG/IMG_OC3.png");
+.bg-logo:hover {
+  background-position: 75%;
+}
+.bg-music {
+  background: linear-gradient(to top,rgba(55,0,55,0.5), transparent),url(https://media1.tenor.com/m/Scvhaq655n0AAAAC/schwi.gif);
+  background-position: 25% center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left left;
+  color: rgb(190,60,150);
+  min-height: 8rem;
 }
-@media (min-width: 600px) {
-  .titoc-yk {
-    background-image: linear-gradient(to right, transparent, rgba(24, 22, 23, 0.25)) !important;
-    padding-top: 16rem;
-  }
-  .bgoc-1 {
-    min-height: 630px;
-  }
-  .bgoc-2 {
-    min-height: 630px;
-  }
-  .bgoc-3 {
-    min-height: 630px;
-  }
+.bg-ttsj {
+  background: linear-gradient(to top,rgba(0,0,0,0.5), transparent),url(IMG/THUMB_ITP.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 8rem;
+  font-family: "Nunito", Sans-serif !important;
+  font-weight: 800;
+  color: rgba(247,247,255,0.75);
 }
-.bg-dark-yk {
-  background-color: rgba(0, 0, 0, 0.5);
+.bg-yk {
+  background: linear-gradient(to top,rgba(0,0,0,0.5), transparent),url(IMG/svg_yk.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.bg-br {
+  background: linear-gradient(to top,rgba(0,0,0,0.5), transparent),url(IMG/svg_br.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-OC {
+  background-image: url(IMG/OCIMG.png);
+  background-size: auto 50%;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+.bg-FICNAT {
+  background-image: url(IMG/IMG_NATEMB.png);
+  background-size: auto 50%;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+.bg-qckinfo {
+  background: var(--YKCL-02);
+}
+.bg-tdown {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" fill="%2360ae3d" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg>');
+  background-size: auto 50%;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+.bg-texp {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%2360ae3d" class="bi bi-clock-history" viewBox="0 0 16 16"><path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/><path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/><path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/></svg>');
+  background-size: auto 50%;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+.bg-strip {
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 2px, transparent 12px);
+  background-position: 25%;
+}
+.bg-strip-prp {
+  background: repeating-linear-gradient(45deg, rgba(180, 0, 180, 0.25), rgba(180, 0, 180, 0.25) 1px, transparent 2px, transparent 12px);
+}
+
